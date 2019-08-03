@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<metadata>
+	<layout title="COM_REALESTATENOW_MENU_TRANSACTIONTYPE_TITLE" option="COM_REALESTATENOW_MENU_TRANSACTIONTYPE_OPTION">
+		<message>
+			<![CDATA[COM_REALESTATENOW_MENU_TRANSACTIONTYPE_DESC]]>
+		</message>
+	</layout>
+	<!-- [Interpretation 1487] Add fields to the request variables for the layout. -->
+	<fields name="request">
+		<fieldset name="request"
+			addrulepath="/administrator/components/com_realestatenow/models/rules"
+			addfieldpath="/administrator/components/com_realestatenow/models/fields">
+
+            <field  type="hidden"
+                    name="task"
+                    default="transactiontype.display" />
+
+	<!--  [Fields 1851] Transactiontype_request_id Field. Type: Transactiontype. (custom) -->
+	<field type="transactiontype"
+               name="id"
+               label="COM_REALESTATENOW_CONFIG_TRANSACTIONTYPE_REQUEST_ID_LABEL"
+               description="COM_REALESTATENOW_CONFIG_TRANSACTIONTYPE_REQUEST_ID_DESCRIPTION"
+               class="list_class"
+               multiple="false"
+               default="0"
+               required="true"
+               button="false" />
+		</fieldset>
+	</fields>
+	<!-- [Interpretation 1516] Adding page parameters -->
+	<fields name="params">
+		<fieldset name="basic" label="COM_REALESTATENOW"
+			addrulepath="/administrator/components/com_realestatenow/models/rules"
+			addfieldpath="/administrator/components/com_realestatenow/models/fields">
+	<!--  [Fields 1553] Transtype_display Field. Type: Radio. (joomla) -->
+	<field type="radio"
+               name="transtype_display"
+               label="COM_REALESTATENOW_CONFIG_TRANSTYPE_DISPLAY_LABEL"
+               class="btn-group btn-group-yesno"
+               default="1">
+                <!-- [Fields 1563] Option Set.-->
+                <option value="1">COM_REALESTATENOW_CONFIG_GRID</option>
+                <option value="2">COM_REALESTATENOW_CONFIG_PANEL</option>
+                <option value="3">COM_REALESTATENOW_CONFIG_LANDING_PAGE</option>
+        </field>			
+	<!--  [Fields 1553] Transtype_thumb_type Field. Type: Radio. (joomla) -->
+	<field type="radio"
+               name="transtype_thumb_type"
+               label="COM_REALESTATENOW_CONFIG_TRANSTYPE_THUMB_TYPE_LABEL"
+               class="btn-group btn-group-yesno"
+               default="0">
+                <!-- [Fields 1563] Option Set.-->
+                <option value="1">COM_REALESTATENOW_CONFIG_CAROUSEL</option>
+                <option value="0">COM_REALESTATENOW_CONFIG_STATIC</option>
+        </field>			
+	<!--  [Fields 1647] Filters_note_seven Field. Type: Note. A None Database Field. (joomla) -->
+	<field type="note"
+               name="filters_note_seven"
+               label="COM_REALESTATENOW_CONFIG_FILTERS_NOTE_SEVEN_LABEL"
+               description="COM_REALESTATENOW_CONFIG_FILTERS_NOTE_SEVEN_DESCRIPTION"
+               heading="h4"
+               class="alert filters_note_seven"
+               close="false" />			
+	<!--  [Fields 1553] Transtype_keyword_filter Field. Type: Radio. (joomla) -->
+	<field type="radio"
+               name="transtype_keyword_filter"
+               label="COM_REALESTATENOW_CONFIG_TRANSTYPE_KEYWORD_FILTER_LABEL"
+               description="COM_REALESTATENOW_CONFIG_TRANSTYPE_KEYWORD_FILTER_DESCRIPTION"
+               class="btn-group btn-group-yesno"
+               default="1">
+                <!-- [Fields 1563] Option Set.-->
+                <option value="1">COM_REALESTATENOW_CONFIG_YES</option>
+                <option value="0">COM_REALESTATENOW_CONFIG_NO</option>
+        </field>			
+	<!--  [Fields 1553] Transtype_category_filter Field. Type: Radio. (joomla) -->
+	<field type="radio"
+               name="transtype_category_filter"
+               label="COM_REALESTATENOW_CONFIG_TRANSTYPE_CATEGORY_FILTER_LABEL"
+               description="COM_REALESTATENOW_CONFIG_TRANSTYPE_CATEGORY_FILTER_DESCRIPTION"
+               class="btn-group btn-group-yesno"
+               default="1">
+                <!-- [Fields 1563] Option Set.-->
+                <option value="1">COM_REALESTATENOW_CONFIG_YES</option>
+                <option value="0">COM_REALESTATENOW_CONFIG_NO</option>
+        </field>			
+	<!--  [Fields 1553] Transtype_mktstatus_filter Field. Type: Radio. (joomla) -->
+	<field type="radio"
+               name="transtype_mktstatus_filter"
+               label="COM_REALESTATENOW_CONFIG_TRANSTYPE_MKTSTATUS_FILTER_LABEL"
+               description="COM_REALESTATENOW_CONFIG_TRANSTYPE_MKTSTATUS_FILTER_DESCRIPTION"
+               class="btn-group btn-group-yesno"
+               default="1">
+                <!-- [Fields 1563] Option Set.-->
+                <option value="1">COM_REALESTATENOW_CONFIG_YES</option>
+                <option value="0">COM_REALESTATENOW_CONFIG_NO</option>
+        </field>			
+	<!--  [Fields 1553] Transtype_agent_filter Field. Type: Radio. (joomla) -->
+	<field type="radio"
+               name="transtype_agent_filter"
+               label="COM_REALESTATENOW_CONFIG_TRANSTYPE_AGENT_FILTER_LABEL"
+               description="COM_REALESTATENOW_CONFIG_TRANSTYPE_AGENT_FILTER_DESCRIPTION"
+               class="btn-group btn-group-yesno"
+               default="1">
+                <!-- [Fields 1563] Option Set.-->
+                <option value="1">COM_REALESTATENOW_CONFIG_YES</option>
+                <option value="0">COM_REALESTATENOW_CONFIG_NO</option>
+        </field>			
+	<!--  [Fields 1553] Transtype_state_filter Field. Type: Radio. (joomla) -->
+	<field type="radio"
+               name="transtype_state_filter"
+               label="COM_REALESTATENOW_CONFIG_TRANSTYPE_STATE_FILTER_LABEL"
+               description="COM_REALESTATENOW_CONFIG_TRANSTYPE_STATE_FILTER_DESCRIPTION"
+               class="btn-group btn-group-yesno"
+               default="1">
+                <!-- [Fields 1563] Option Set.-->
+                <option value="1">COM_REALESTATENOW_CONFIG_YES</option>
+                <option value="0">COM_REALESTATENOW_CONFIG_NO</option>
+        </field>			
+	<!--  [Fields 1553] Transtype_city_filter Field. Type: Radio. (joomla) -->
+	<field type="radio"
+               name="transtype_city_filter"
+               label="COM_REALESTATENOW_CONFIG_TRANSTYPE_CITY_FILTER_LABEL"
+               description="COM_REALESTATENOW_CONFIG_TRANSTYPE_CITY_FILTER_DESCRIPTION"
+               class="btn-group btn-group-yesno"
+               default="1">
+                <!-- [Fields 1563] Option Set.-->
+                <option value="1">COM_REALESTATENOW_CONFIG_YES</option>
+                <option value="0">COM_REALESTATENOW_CONFIG_NO</option>
+        </field>			
+	<!--  [Fields 1553] Transtype_beds_filter Field. Type: Radio. (joomla) -->
+	<field type="radio"
+               name="transtype_beds_filter"
+               label="COM_REALESTATENOW_CONFIG_TRANSTYPE_BEDS_FILTER_LABEL"
+               description="COM_REALESTATENOW_CONFIG_TRANSTYPE_BEDS_FILTER_DESCRIPTION"
+               class="btn-group btn-group-yesno"
+               default="1">
+                <!-- [Fields 1563] Option Set.-->
+                <option value="1">COM_REALESTATENOW_CONFIG_YES</option>
+                <option value="0">COM_REALESTATENOW_CONFIG_NO</option>
+        </field>			
+	<!--  [Fields 1553] Transtype_baths_filter Field. Type: Radio. (joomla) -->
+	<field type="radio"
+               name="transtype_baths_filter"
+               label="COM_REALESTATENOW_CONFIG_TRANSTYPE_BATHS_FILTER_LABEL"
+               description="COM_REALESTATENOW_CONFIG_TRANSTYPE_BATHS_FILTER_DESCRIPTION"
+               class="btn-group btn-group-yesno"
+               default="1">
+                <!-- [Fields 1563] Option Set.-->
+                <option value="1">COM_REALESTATENOW_CONFIG_YES</option>
+                <option value="0">COM_REALESTATENOW_CONFIG_NO</option>
+        </field>			
+	<!--  [Fields 1553] Transtype_area_filter Field. Type: Radio. (joomla) -->
+	<field type="radio"
+               name="transtype_area_filter"
+               label="COM_REALESTATENOW_CONFIG_TRANSTYPE_AREA_FILTER_LABEL"
+               description="COM_REALESTATENOW_CONFIG_TRANSTYPE_AREA_FILTER_DESCRIPTION"
+               class="btn-group btn-group-yesno"
+               default="1">
+                <!-- [Fields 1563] Option Set.-->
+                <option value="1">COM_REALESTATENOW_CONFIG_YES</option>
+                <option value="0">COM_REALESTATENOW_CONFIG_NO</option>
+        </field>			
+	<!--  [Fields 1553] Transtype_price_filter Field. Type: Radio. (joomla) -->
+	<field type="radio"
+               name="transtype_price_filter"
+               label="COM_REALESTATENOW_CONFIG_TRANSTYPE_PRICE_FILTER_LABEL"
+               description="COM_REALESTATENOW_CONFIG_TRANSTYPE_PRICE_FILTER_DESCRIPTION"
+               class="btn-group btn-group-yesno"
+               default="1">
+                <!-- [Fields 1563] Option Set.-->
+                <option value="1">COM_REALESTATENOW_CONFIG_YES</option>
+                <option value="0">COM_REALESTATENOW_CONFIG_NO</option>
+        </field>			
+	<!--  [Fields 1553] Transtype_land_filter Field. Type: Radio. (joomla) -->
+	<field type="radio"
+               name="transtype_land_filter"
+               label="COM_REALESTATENOW_CONFIG_TRANSTYPE_LAND_FILTER_LABEL"
+               description="COM_REALESTATENOW_CONFIG_TRANSTYPE_LAND_FILTER_DESCRIPTION"
+               class="btn-group btn-group-yesno"
+               default="1">
+                <!-- [Fields 1563] Option Set.-->
+                <option value="1">COM_REALESTATENOW_CONFIG_YES</option>
+                <option value="0">COM_REALESTATENOW_CONFIG_NO</option>
+        </field>			
+	<!--  [Fields 1553] Waterfront_land_filter Field. Type: Radio. (joomla) -->
+	<field type="radio"
+               name="waterfront_land_filter"
+               label="COM_REALESTATENOW_CONFIG_WATERFRONT_LAND_FILTER_LABEL"
+               description="COM_REALESTATENOW_CONFIG_WATERFRONT_LAND_FILTER_DESCRIPTION"
+               class="btn-group btn-group-yesno"
+               default="1">
+                <!-- [Fields 1563] Option Set.-->
+                <option value="1">COM_REALESTATENOW_CONFIG_YES</option>
+                <option value="0">COM_REALESTATENOW_CONFIG_NO</option>
+        </field>
+		</fieldset>
+	</fields>
+</metadata>

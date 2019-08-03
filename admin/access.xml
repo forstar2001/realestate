@@ -1,0 +1,409 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<access component="com_realestatenow">
+	<section name="component">
+		<action name="core.admin" title="JACTION_ADMIN" description="JACTION_ADMIN_COMPONENT_DESC" />
+		<action name="core.options" title="JACTION_OPTIONS" description="JACTION_OPTIONS_COMPONENT_DESC" />
+		<action name="core.manage" title="JACTION_MANAGE" description="JACTION_MANAGE_COMPONENT_DESC" />
+		<action name="core.export" title="COM_REALESTATENOW_EXPORT_DATA" description="COM_REALESTATENOW_EXPORT_DATA_DESC" />
+		<action name="core.import" title="COM_REALESTATENOW_IMPORT_DATA" description="COM_REALESTATENOW_IMPORT_DATA_DESC" />
+		<action name="core.batch" title="COM_REALESTATENOW_USE_BATCH" description="COM_REALESTATENOW_USE_BATCH_DESC" />
+		<action name="core.version" title="COM_REALESTATENOW_EDIT_VERSIONS" description="COM_REALESTATENOW_EDIT_VERSIONS_DESC" />
+		<action name="core.create" title="JACTION_CREATE" description="JACTION_CREATE_COMPONENT_DESC" />
+		<action name="core.delete" title="JACTION_DELETE" description="JACTION_DELETE_COMPONENT_DESC" />
+		<action name="core.edit" title="JACTION_EDIT" description="JACTION_EDIT_COMPONENT_DESC" />
+		<action name="core.edit.state" title="JACTION_EDITSTATE" description="JACTION_ACCESS_EDITSTATE_DESC" />
+		<action name="core.edit.own" title="JACTION_EDITOWN" description="JACTION_EDITOWN_COMPONENT_DESC" />
+		<action name="core.edit.created_by" title="COM_REALESTATENOW_EDIT_CREATED_BY" description="COM_REALESTATENOW_EDIT_CREATED_BY_DESC" />
+		<action name="core.edit.created" title="COM_REALESTATENOW_EDIT_CREATED_DATE" description="COM_REALESTATENOW_EDIT_CREATED_DATE_DESC" />
+		<action name="agency.access" title="COM_REALESTATENOW_AGENCIES_ACCESS" description="COM_REALESTATENOW_AGENCIES_ACCESS_DESC" />
+		<action name="agency.batch" title="COM_REALESTATENOW_AGENCIES_BATCH_USE" description="COM_REALESTATENOW_AGENCIES_BATCH_USE_DESC" />
+		<action name="agency.create" title="COM_REALESTATENOW_AGENCIES_CREATE" description="COM_REALESTATENOW_AGENCIES_CREATE_DESC" />
+		<action name="agency.dashboard_list" title="COM_REALESTATENOW_AGENCIES_DASHBOARD_LIST" description="COM_REALESTATENOW_AGENCIES_DASHBOARD_LIST_DESC" />
+		<action name="agency.delete" title="COM_REALESTATENOW_AGENCIES_DELETE" description="COM_REALESTATENOW_AGENCIES_DELETE_DESC" />
+		<action name="agency.edit" title="COM_REALESTATENOW_AGENCIES_EDIT" description="COM_REALESTATENOW_AGENCIES_EDIT_DESC" />
+		<action name="agency.edit.created_by" title="COM_REALESTATENOW_AGENCIES_EDIT_CREATED_BY" description="COM_REALESTATENOW_AGENCIES_EDIT_CREATED_BY_DESC" />
+		<action name="agency.edit.created" title="COM_REALESTATENOW_AGENCIES_EDIT_CREATED_DATE" description="COM_REALESTATENOW_AGENCIES_EDIT_CREATED_DATE_DESC" />
+		<action name="agency.edit.own" title="COM_REALESTATENOW_AGENCIES_EDIT_OWN" description="COM_REALESTATENOW_AGENCIES_EDIT_OWN_DESC" />
+		<action name="agency.edit.state" title="COM_REALESTATENOW_AGENCIES_EDIT_STATE" description="COM_REALESTATENOW_AGENCIES_EDIT_STATE_DESC" />
+		<action name="agency.version" title="COM_REALESTATENOW_AGENCIES_EDIT_VERSION" description="COM_REALESTATENOW_AGENCIES_EDIT_VERSION_DESC" />
+		<action name="agency.export" title="COM_REALESTATENOW_AGENCIES_EXPORT" description="COM_REALESTATENOW_AGENCIES_EXPORT_DESC" />
+		<action name="agency.import" title="COM_REALESTATENOW_AGENCIES_IMPORT" description="COM_REALESTATENOW_AGENCIES_IMPORT_DESC" />
+		<action name="agency.submenu" title="COM_REALESTATENOW_AGENCIES_SUBMENU" description="COM_REALESTATENOW_AGENCIES_SUBMENU_DESC" />
+		<action name="site.agency.access" title="COM_REALESTATENOW_AGENCY_ACCESS_SITE" description="COM_REALESTATENOW_AGENCY_ACCESS_SITE_DESC" />
+		<action name="site.agentview.access" title="COM_REALESTATENOW_AGENT_ACCESS_SITE" description="COM_REALESTATENOW_AGENT_ACCESS_SITE_DESC" />
+		<action name="site.agentprofile.access" title="COM_REALESTATENOW_AGENT_PROFILE_ACCESS_SITE" description="COM_REALESTATENOW_AGENT_PROFILE_ACCESS_SITE_DESC" />
+		<action name="agent.access" title="COM_REALESTATENOW_AGENTS_ACCESS" description="COM_REALESTATENOW_AGENTS_ACCESS_DESC" />
+		<action name="agent.batch" title="COM_REALESTATENOW_AGENTS_BATCH_USE" description="COM_REALESTATENOW_AGENTS_BATCH_USE_DESC" />
+		<action name="agent.create" title="COM_REALESTATENOW_AGENTS_CREATE" description="COM_REALESTATENOW_AGENTS_CREATE_DESC" />
+		<action name="agent.dashboard_add" title="COM_REALESTATENOW_AGENTS_DASHBOARD_ADD" description="COM_REALESTATENOW_AGENTS_DASHBOARD_ADD_DESC" />
+		<action name="agent.dashboard_list" title="COM_REALESTATENOW_AGENTS_DASHBOARD_LIST" description="COM_REALESTATENOW_AGENTS_DASHBOARD_LIST_DESC" />
+		<action name="agent.delete" title="COM_REALESTATENOW_AGENTS_DELETE" description="COM_REALESTATENOW_AGENTS_DELETE_DESC" />
+		<action name="agent.edit" title="COM_REALESTATENOW_AGENTS_EDIT" description="COM_REALESTATENOW_AGENTS_EDIT_DESC" />
+		<action name="agent.edit.created_by" title="COM_REALESTATENOW_AGENTS_EDIT_CREATED_BY" description="COM_REALESTATENOW_AGENTS_EDIT_CREATED_BY_DESC" />
+		<action name="agent.edit.created" title="COM_REALESTATENOW_AGENTS_EDIT_CREATED_DATE" description="COM_REALESTATENOW_AGENTS_EDIT_CREATED_DATE_DESC" />
+		<action name="agent.edit.own" title="COM_REALESTATENOW_AGENTS_EDIT_OWN" description="COM_REALESTATENOW_AGENTS_EDIT_OWN_DESC" />
+		<action name="agent.edit.state" title="COM_REALESTATENOW_AGENTS_EDIT_STATE" description="COM_REALESTATENOW_AGENTS_EDIT_STATE_DESC" />
+		<action name="agent.version" title="COM_REALESTATENOW_AGENTS_EDIT_VERSION" description="COM_REALESTATENOW_AGENTS_EDIT_VERSION_DESC" />
+		<action name="agent.export" title="COM_REALESTATENOW_AGENTS_EXPORT" description="COM_REALESTATENOW_AGENTS_EXPORT_DESC" />
+		<action name="agent.import" title="COM_REALESTATENOW_AGENTS_IMPORT" description="COM_REALESTATENOW_AGENTS_IMPORT_DESC" />
+		<action name="agent.submenu" title="COM_REALESTATENOW_AGENTS_SUBMENU" description="COM_REALESTATENOW_AGENTS_SUBMENU_DESC" />
+		<action name="site.agencies.access" title="COM_REALESTATENOW_ALL_AGENCIES_ACCESS_SITE" description="COM_REALESTATENOW_ALL_AGENCIES_ACCESS_SITE_DESC" />
+		<action name="site.agents.access" title="COM_REALESTATENOW_ALL_AGENTS_ACCESS_SITE" description="COM_REALESTATENOW_ALL_AGENTS_ACCESS_SITE_DESC" />
+		<action name="site.cities.access" title="COM_REALESTATENOW_ALL_CITIES_ACCESS_SITE" description="COM_REALESTATENOW_ALL_CITIES_ACCESS_SITE_DESC" />
+		<action name="site.countries.access" title="COM_REALESTATENOW_ALL_COUNTRIES_ACCESS_SITE" description="COM_REALESTATENOW_ALL_COUNTRIES_ACCESS_SITE_DESC" />
+		<action name="site.featured.access" title="COM_REALESTATENOW_ALL_FEATURED_LISTINGS_ACCESS_SITE" description="COM_REALESTATENOW_ALL_FEATURED_LISTINGS_ACCESS_SITE_DESC" />
+		<action name="site.categories.access" title="COM_REALESTATENOW_ALL_PROPERTY_CATEGORIES_ACCESS_SITE" description="COM_REALESTATENOW_ALL_PROPERTY_CATEGORIES_ACCESS_SITE_DESC" />
+		<action name="site.properties.access" title="COM_REALESTATENOW_ALL_PROPERTY_LISTINGS_ACCESS_SITE" description="COM_REALESTATENOW_ALL_PROPERTY_LISTINGS_ACCESS_SITE_DESC" />
+		<action name="site.states.access" title="COM_REALESTATENOW_ALL_STATES_ACCESS_SITE" description="COM_REALESTATENOW_ALL_STATES_ACCESS_SITE_DESC" />
+		<action name="area.access" title="COM_REALESTATENOW_AREAS_ACCESS" description="COM_REALESTATENOW_AREAS_ACCESS_DESC" />
+		<action name="area.batch" title="COM_REALESTATENOW_AREAS_BATCH_USE" description="COM_REALESTATENOW_AREAS_BATCH_USE_DESC" />
+		<action name="area.version" title="COM_REALESTATENOW_AREAS_EDIT_VERSION" description="COM_REALESTATENOW_AREAS_EDIT_VERSION_DESC" />
+		<action name="area.export" title="COM_REALESTATENOW_AREAS_EXPORT" description="COM_REALESTATENOW_AREAS_EXPORT_DESC" />
+		<action name="area.import" title="COM_REALESTATENOW_AREAS_IMPORT" description="COM_REALESTATENOW_AREAS_IMPORT_DESC" />
+		<action name="city.access" title="COM_REALESTATENOW_CITIES_ACCESS" description="COM_REALESTATENOW_CITIES_ACCESS_DESC" />
+		<action name="city.batch" title="COM_REALESTATENOW_CITIES_BATCH_USE" description="COM_REALESTATENOW_CITIES_BATCH_USE_DESC" />
+		<action name="city.create" title="COM_REALESTATENOW_CITIES_CREATE" description="COM_REALESTATENOW_CITIES_CREATE_DESC" />
+		<action name="city.dashboard_list" title="COM_REALESTATENOW_CITIES_DASHBOARD_LIST" description="COM_REALESTATENOW_CITIES_DASHBOARD_LIST_DESC" />
+		<action name="city.delete" title="COM_REALESTATENOW_CITIES_DELETE" description="COM_REALESTATENOW_CITIES_DELETE_DESC" />
+		<action name="city.edit" title="COM_REALESTATENOW_CITIES_EDIT" description="COM_REALESTATENOW_CITIES_EDIT_DESC" />
+		<action name="city.edit.created_by" title="COM_REALESTATENOW_CITIES_EDIT_CREATED_BY" description="COM_REALESTATENOW_CITIES_EDIT_CREATED_BY_DESC" />
+		<action name="city.edit.created" title="COM_REALESTATENOW_CITIES_EDIT_CREATED_DATE" description="COM_REALESTATENOW_CITIES_EDIT_CREATED_DATE_DESC" />
+		<action name="city.edit.own" title="COM_REALESTATENOW_CITIES_EDIT_OWN" description="COM_REALESTATENOW_CITIES_EDIT_OWN_DESC" />
+		<action name="city.edit.state" title="COM_REALESTATENOW_CITIES_EDIT_STATE" description="COM_REALESTATENOW_CITIES_EDIT_STATE_DESC" />
+		<action name="city.version" title="COM_REALESTATENOW_CITIES_EDIT_VERSION" description="COM_REALESTATENOW_CITIES_EDIT_VERSION_DESC" />
+		<action name="city.export" title="COM_REALESTATENOW_CITIES_EXPORT" description="COM_REALESTATENOW_CITIES_EXPORT_DESC" />
+		<action name="city.import" title="COM_REALESTATENOW_CITIES_IMPORT" description="COM_REALESTATENOW_CITIES_IMPORT_DESC" />
+		<action name="city.submenu" title="COM_REALESTATENOW_CITIES_SUBMENU" description="COM_REALESTATENOW_CITIES_SUBMENU_DESC" />
+		<action name="site.city.access" title="COM_REALESTATENOW_CITY_ACCESS_SITE" description="COM_REALESTATENOW_CITY_ACCESS_SITE_DESC" />
+		<action name="commercial.access" title="COM_REALESTATENOW_COMMERCIALS_ACCESS" description="COM_REALESTATENOW_COMMERCIALS_ACCESS_DESC" />
+		<action name="commercial.batch" title="COM_REALESTATENOW_COMMERCIALS_BATCH_USE" description="COM_REALESTATENOW_COMMERCIALS_BATCH_USE_DESC" />
+		<action name="commercial.version" title="COM_REALESTATENOW_COMMERCIALS_EDIT_VERSION" description="COM_REALESTATENOW_COMMERCIALS_EDIT_VERSION_DESC" />
+		<action name="commercial.export" title="COM_REALESTATENOW_COMMERCIALS_EXPORT" description="COM_REALESTATENOW_COMMERCIALS_EXPORT_DESC" />
+		<action name="commercial.import" title="COM_REALESTATENOW_COMMERCIALS_IMPORT" description="COM_REALESTATENOW_COMMERCIALS_IMPORT_DESC" />
+		<action name="country.access" title="COM_REALESTATENOW_COUNTRIES_ACCESS" description="COM_REALESTATENOW_COUNTRIES_ACCESS_DESC" />
+		<action name="country.batch" title="COM_REALESTATENOW_COUNTRIES_BATCH_USE" description="COM_REALESTATENOW_COUNTRIES_BATCH_USE_DESC" />
+		<action name="country.create" title="COM_REALESTATENOW_COUNTRIES_CREATE" description="COM_REALESTATENOW_COUNTRIES_CREATE_DESC" />
+		<action name="country.dashboard_list" title="COM_REALESTATENOW_COUNTRIES_DASHBOARD_LIST" description="COM_REALESTATENOW_COUNTRIES_DASHBOARD_LIST_DESC" />
+		<action name="country.delete" title="COM_REALESTATENOW_COUNTRIES_DELETE" description="COM_REALESTATENOW_COUNTRIES_DELETE_DESC" />
+		<action name="country.edit" title="COM_REALESTATENOW_COUNTRIES_EDIT" description="COM_REALESTATENOW_COUNTRIES_EDIT_DESC" />
+		<action name="country.edit.created_by" title="COM_REALESTATENOW_COUNTRIES_EDIT_CREATED_BY" description="COM_REALESTATENOW_COUNTRIES_EDIT_CREATED_BY_DESC" />
+		<action name="country.edit.created" title="COM_REALESTATENOW_COUNTRIES_EDIT_CREATED_DATE" description="COM_REALESTATENOW_COUNTRIES_EDIT_CREATED_DATE_DESC" />
+		<action name="country.edit.own" title="COM_REALESTATENOW_COUNTRIES_EDIT_OWN" description="COM_REALESTATENOW_COUNTRIES_EDIT_OWN_DESC" />
+		<action name="country.edit.state" title="COM_REALESTATENOW_COUNTRIES_EDIT_STATE" description="COM_REALESTATENOW_COUNTRIES_EDIT_STATE_DESC" />
+		<action name="country.version" title="COM_REALESTATENOW_COUNTRIES_EDIT_VERSION" description="COM_REALESTATENOW_COUNTRIES_EDIT_VERSION_DESC" />
+		<action name="country.export" title="COM_REALESTATENOW_COUNTRIES_EXPORT" description="COM_REALESTATENOW_COUNTRIES_EXPORT_DESC" />
+		<action name="country.import" title="COM_REALESTATENOW_COUNTRIES_IMPORT" description="COM_REALESTATENOW_COUNTRIES_IMPORT_DESC" />
+		<action name="country.submenu" title="COM_REALESTATENOW_COUNTRIES_SUBMENU" description="COM_REALESTATENOW_COUNTRIES_SUBMENU_DESC" />
+		<action name="site.country.access" title="COM_REALESTATENOW_COUNTRY_ACCESS_SITE" description="COM_REALESTATENOW_COUNTRY_ACCESS_SITE_DESC" />
+		<action name="favorite_listing.access" title="COM_REALESTATENOW_FAVORITE_LISTINGS_ACCESS" description="COM_REALESTATENOW_FAVORITE_LISTINGS_ACCESS_DESC" />
+		<action name="site.favorites.access" title="COM_REALESTATENOW_FAVORITE_LISTINGS_ACCESS_SITE" description="COM_REALESTATENOW_FAVORITE_LISTINGS_ACCESS_SITE_DESC" />
+		<action name="favorite_listing.batch" title="COM_REALESTATENOW_FAVORITE_LISTINGS_BATCH_USE" description="COM_REALESTATENOW_FAVORITE_LISTINGS_BATCH_USE_DESC" />
+		<action name="favorite_listing.edit.created_by" title="COM_REALESTATENOW_FAVORITE_LISTINGS_EDIT_CREATED_BY" description="COM_REALESTATENOW_FAVORITE_LISTINGS_EDIT_CREATED_BY_DESC" />
+		<action name="favorite_listing.edit.own" title="COM_REALESTATENOW_FAVORITE_LISTINGS_EDIT_OWN" description="COM_REALESTATENOW_FAVORITE_LISTINGS_EDIT_OWN_DESC" />
+		<action name="favorite_listing.version" title="COM_REALESTATENOW_FAVORITE_LISTINGS_EDIT_VERSION" description="COM_REALESTATENOW_FAVORITE_LISTINGS_EDIT_VERSION_DESC" />
+		<action name="favorite_listing.export" title="COM_REALESTATENOW_FAVORITE_LISTINGS_EXPORT" description="COM_REALESTATENOW_FAVORITE_LISTINGS_EXPORT_DESC" />
+		<action name="favorite_listing.import" title="COM_REALESTATENOW_FAVORITE_LISTINGS_IMPORT" description="COM_REALESTATENOW_FAVORITE_LISTINGS_IMPORT_DESC" />
+		<action name="favorite_listing.submenu" title="COM_REALESTATENOW_FAVORITE_LISTINGS_SUBMENU" description="COM_REALESTATENOW_FAVORITE_LISTINGS_SUBMENU_DESC" />
+		<action name="feature_type.access" title="COM_REALESTATENOW_FEATURE_TYPES_ACCESS" description="COM_REALESTATENOW_FEATURE_TYPES_ACCESS_DESC" />
+		<action name="feature_type.batch" title="COM_REALESTATENOW_FEATURE_TYPES_BATCH_USE" description="COM_REALESTATENOW_FEATURE_TYPES_BATCH_USE_DESC" />
+		<action name="feature_type.version" title="COM_REALESTATENOW_FEATURE_TYPES_EDIT_VERSION" description="COM_REALESTATENOW_FEATURE_TYPES_EDIT_VERSION_DESC" />
+		<action name="feature_type.export" title="COM_REALESTATENOW_FEATURE_TYPES_EXPORT" description="COM_REALESTATENOW_FEATURE_TYPES_EXPORT_DESC" />
+		<action name="feature_type.import" title="COM_REALESTATENOW_FEATURE_TYPES_IMPORT" description="COM_REALESTATENOW_FEATURE_TYPES_IMPORT_DESC" />
+		<action name="feature_type.submenu" title="COM_REALESTATENOW_FEATURE_TYPES_SUBMENU" description="COM_REALESTATENOW_FEATURE_TYPES_SUBMENU_DESC" />
+		<action name="site.featuredcategory.access" title="COM_REALESTATENOW_FEATURED_PROPERTY_CATEGORY_ACCESS_SITE" description="COM_REALESTATENOW_FEATURED_PROPERTY_CATEGORY_ACCESS_SITE_DESC" />
+		<action name="feature.access" title="COM_REALESTATENOW_FEATURES_ACCESS" description="COM_REALESTATENOW_FEATURES_ACCESS_DESC" />
+		<action name="feature.batch" title="COM_REALESTATENOW_FEATURES_BATCH_USE" description="COM_REALESTATENOW_FEATURES_BATCH_USE_DESC" />
+		<action name="feature.version" title="COM_REALESTATENOW_FEATURES_EDIT_VERSION" description="COM_REALESTATENOW_FEATURES_EDIT_VERSION_DESC" />
+		<action name="feature.export" title="COM_REALESTATENOW_FEATURES_EXPORT" description="COM_REALESTATENOW_FEATURES_EXPORT_DESC" />
+		<action name="feature.import" title="COM_REALESTATENOW_FEATURES_IMPORT" description="COM_REALESTATENOW_FEATURES_IMPORT_DESC" />
+		<action name="financial.access" title="COM_REALESTATENOW_FINANCIALS_ACCESS" description="COM_REALESTATENOW_FINANCIALS_ACCESS_DESC" />
+		<action name="financial.batch" title="COM_REALESTATENOW_FINANCIALS_BATCH_USE" description="COM_REALESTATENOW_FINANCIALS_BATCH_USE_DESC" />
+		<action name="financial.version" title="COM_REALESTATENOW_FINANCIALS_EDIT_VERSION" description="COM_REALESTATENOW_FINANCIALS_EDIT_VERSION_DESC" />
+		<action name="financial.export" title="COM_REALESTATENOW_FINANCIALS_EXPORT" description="COM_REALESTATENOW_FINANCIALS_EXPORT_DESC" />
+		<action name="financial.import" title="COM_REALESTATENOW_FINANCIALS_IMPORT" description="COM_REALESTATENOW_FINANCIALS_IMPORT_DESC" />
+		<action name="site.hotsheet.access" title="COM_REALESTATENOW_HOTSHEET_PROPERTY_LISTINGS_ACCESS_SITE" description="COM_REALESTATENOW_HOTSHEET_PROPERTY_LISTINGS_ACCESS_SITE_DESC" />
+		<action name="image.access" title="COM_REALESTATENOW_IMAGES_ACCESS" description="COM_REALESTATENOW_IMAGES_ACCESS_DESC" />
+		<action name="image.batch" title="COM_REALESTATENOW_IMAGES_BATCH_USE" description="COM_REALESTATENOW_IMAGES_BATCH_USE_DESC" />
+		<action name="image.version" title="COM_REALESTATENOW_IMAGES_EDIT_VERSION" description="COM_REALESTATENOW_IMAGES_EDIT_VERSION_DESC" />
+		<action name="image.export" title="COM_REALESTATENOW_IMAGES_EXPORT" description="COM_REALESTATENOW_IMAGES_EXPORT_DESC" />
+		<action name="image.import" title="COM_REALESTATENOW_IMAGES_IMPORT" description="COM_REALESTATENOW_IMAGES_IMPORT_DESC" />
+		<action name="land.access" title="COM_REALESTATENOW_LANDS_ACCESS" description="COM_REALESTATENOW_LANDS_ACCESS_DESC" />
+		<action name="land.batch" title="COM_REALESTATENOW_LANDS_BATCH_USE" description="COM_REALESTATENOW_LANDS_BATCH_USE_DESC" />
+		<action name="land.version" title="COM_REALESTATENOW_LANDS_EDIT_VERSION" description="COM_REALESTATENOW_LANDS_EDIT_VERSION_DESC" />
+		<action name="land.export" title="COM_REALESTATENOW_LANDS_EXPORT" description="COM_REALESTATENOW_LANDS_EXPORT_DESC" />
+		<action name="land.import" title="COM_REALESTATENOW_LANDS_IMPORT" description="COM_REALESTATENOW_LANDS_IMPORT_DESC" />
+		<action name="market_status.access" title="COM_REALESTATENOW_MARKET_STATUSES_ACCESS" description="COM_REALESTATENOW_MARKET_STATUSES_ACCESS_DESC" />
+		<action name="market_status.batch" title="COM_REALESTATENOW_MARKET_STATUSES_BATCH_USE" description="COM_REALESTATENOW_MARKET_STATUSES_BATCH_USE_DESC" />
+		<action name="market_status.version" title="COM_REALESTATENOW_MARKET_STATUSES_EDIT_VERSION" description="COM_REALESTATENOW_MARKET_STATUSES_EDIT_VERSION_DESC" />
+		<action name="market_status.export" title="COM_REALESTATENOW_MARKET_STATUSES_EXPORT" description="COM_REALESTATENOW_MARKET_STATUSES_EXPORT_DESC" />
+		<action name="market_status.import" title="COM_REALESTATENOW_MARKET_STATUSES_IMPORT" description="COM_REALESTATENOW_MARKET_STATUSES_IMPORT_DESC" />
+		<action name="market_status.submenu" title="COM_REALESTATENOW_MARKET_STATUSES_SUBMENU" description="COM_REALESTATENOW_MARKET_STATUSES_SUBMENU_DESC" />
+		<action name="mls.access" title="COM_REALESTATENOW_MLS_RECORDS_ACCESS" description="COM_REALESTATENOW_MLS_RECORDS_ACCESS_DESC" />
+		<action name="mls.batch" title="COM_REALESTATENOW_MLS_RECORDS_BATCH_USE" description="COM_REALESTATENOW_MLS_RECORDS_BATCH_USE_DESC" />
+		<action name="mls.version" title="COM_REALESTATENOW_MLS_RECORDS_EDIT_VERSION" description="COM_REALESTATENOW_MLS_RECORDS_EDIT_VERSION_DESC" />
+		<action name="mls.export" title="COM_REALESTATENOW_MLS_RECORDS_EXPORT" description="COM_REALESTATENOW_MLS_RECORDS_EXPORT_DESC" />
+		<action name="mls.import" title="COM_REALESTATENOW_MLS_RECORDS_IMPORT" description="COM_REALESTATENOW_MLS_RECORDS_IMPORT_DESC" />
+		<action name="mls.submenu" title="COM_REALESTATENOW_MLS_RECORDS_SUBMENU" description="COM_REALESTATENOW_MLS_RECORDS_SUBMENU_DESC" />
+		<action name="multifamily.access" title="COM_REALESTATENOW_MULTIFAMILIES_ACCESS" description="COM_REALESTATENOW_MULTIFAMILIES_ACCESS_DESC" />
+		<action name="multifamily.batch" title="COM_REALESTATENOW_MULTIFAMILIES_BATCH_USE" description="COM_REALESTATENOW_MULTIFAMILIES_BATCH_USE_DESC" />
+		<action name="multifamily.version" title="COM_REALESTATENOW_MULTIFAMILIES_EDIT_VERSION" description="COM_REALESTATENOW_MULTIFAMILIES_EDIT_VERSION_DESC" />
+		<action name="multifamily.export" title="COM_REALESTATENOW_MULTIFAMILIES_EXPORT" description="COM_REALESTATENOW_MULTIFAMILIES_EXPORT_DESC" />
+		<action name="multifamily.import" title="COM_REALESTATENOW_MULTIFAMILIES_IMPORT" description="COM_REALESTATENOW_MULTIFAMILIES_IMPORT_DESC" />
+		<action name="site.openhouses.access" title="COM_REALESTATENOW_OPEN_HOUSES_ACCESS_SITE" description="COM_REALESTATENOW_OPEN_HOUSES_ACCESS_SITE_DESC" />
+		<action name="property.access" title="COM_REALESTATENOW_PROPERTIES_ACCESS" description="COM_REALESTATENOW_PROPERTIES_ACCESS_DESC" />
+		<action name="property.batch" title="COM_REALESTATENOW_PROPERTIES_BATCH_USE" description="COM_REALESTATENOW_PROPERTIES_BATCH_USE_DESC" />
+		<action name="property.create" title="COM_REALESTATENOW_PROPERTIES_CREATE" description="COM_REALESTATENOW_PROPERTIES_CREATE_DESC" />
+		<action name="property.dashboard_add" title="COM_REALESTATENOW_PROPERTIES_DASHBOARD_ADD" description="COM_REALESTATENOW_PROPERTIES_DASHBOARD_ADD_DESC" />
+		<action name="property.dashboard_list" title="COM_REALESTATENOW_PROPERTIES_DASHBOARD_LIST" description="COM_REALESTATENOW_PROPERTIES_DASHBOARD_LIST_DESC" />
+		<action name="property.delete" title="COM_REALESTATENOW_PROPERTIES_DELETE" description="COM_REALESTATENOW_PROPERTIES_DELETE_DESC" />
+		<action name="property.edit" title="COM_REALESTATENOW_PROPERTIES_EDIT" description="COM_REALESTATENOW_PROPERTIES_EDIT_DESC" />
+		<action name="property.edit.created_by" title="COM_REALESTATENOW_PROPERTIES_EDIT_CREATED_BY" description="COM_REALESTATENOW_PROPERTIES_EDIT_CREATED_BY_DESC" />
+		<action name="property.edit.created" title="COM_REALESTATENOW_PROPERTIES_EDIT_CREATED_DATE" description="COM_REALESTATENOW_PROPERTIES_EDIT_CREATED_DATE_DESC" />
+		<action name="property.edit.own" title="COM_REALESTATENOW_PROPERTIES_EDIT_OWN" description="COM_REALESTATENOW_PROPERTIES_EDIT_OWN_DESC" />
+		<action name="property.edit.state" title="COM_REALESTATENOW_PROPERTIES_EDIT_STATE" description="COM_REALESTATENOW_PROPERTIES_EDIT_STATE_DESC" />
+		<action name="property.version" title="COM_REALESTATENOW_PROPERTIES_EDIT_VERSION" description="COM_REALESTATENOW_PROPERTIES_EDIT_VERSION_DESC" />
+		<action name="property.export" title="COM_REALESTATENOW_PROPERTIES_EXPORT" description="COM_REALESTATENOW_PROPERTIES_EXPORT_DESC" />
+		<action name="property.import" title="COM_REALESTATENOW_PROPERTIES_IMPORT" description="COM_REALESTATENOW_PROPERTIES_IMPORT_DESC" />
+		<action name="property.submenu" title="COM_REALESTATENOW_PROPERTIES_SUBMENU" description="COM_REALESTATENOW_PROPERTIES_SUBMENU_DESC" />
+		<action name="site.property.access" title="COM_REALESTATENOW_PROPERTY_ACCESS_SITE" description="COM_REALESTATENOW_PROPERTY_ACCESS_SITE_DESC" />
+		<action name="site.category.access" title="COM_REALESTATENOW_PROPERTY_CATEGORY_ACCESS_SITE" description="COM_REALESTATENOW_PROPERTY_CATEGORY_ACCESS_SITE_DESC" />
+		<action name="rent_type.access" title="COM_REALESTATENOW_RENT_TYPES_ACCESS" description="COM_REALESTATENOW_RENT_TYPES_ACCESS_DESC" />
+		<action name="rent_type.batch" title="COM_REALESTATENOW_RENT_TYPES_BATCH_USE" description="COM_REALESTATENOW_RENT_TYPES_BATCH_USE_DESC" />
+		<action name="rent_type.version" title="COM_REALESTATENOW_RENT_TYPES_EDIT_VERSION" description="COM_REALESTATENOW_RENT_TYPES_EDIT_VERSION_DESC" />
+		<action name="rent_type.export" title="COM_REALESTATENOW_RENT_TYPES_EXPORT" description="COM_REALESTATENOW_RENT_TYPES_EXPORT_DESC" />
+		<action name="rent_type.import" title="COM_REALESTATENOW_RENT_TYPES_IMPORT" description="COM_REALESTATENOW_RENT_TYPES_IMPORT_DESC" />
+		<action name="rent_type.submenu" title="COM_REALESTATENOW_RENT_TYPES_SUBMENU" description="COM_REALESTATENOW_RENT_TYPES_SUBMENU_DESC" />
+		<action name="rental_frequency.access" title="COM_REALESTATENOW_RENTAL_FREQUENCIES_ACCESS" description="COM_REALESTATENOW_RENTAL_FREQUENCIES_ACCESS_DESC" />
+		<action name="rental_frequency.batch" title="COM_REALESTATENOW_RENTAL_FREQUENCIES_BATCH_USE" description="COM_REALESTATENOW_RENTAL_FREQUENCIES_BATCH_USE_DESC" />
+		<action name="rental_frequency.version" title="COM_REALESTATENOW_RENTAL_FREQUENCIES_EDIT_VERSION" description="COM_REALESTATENOW_RENTAL_FREQUENCIES_EDIT_VERSION_DESC" />
+		<action name="rental_frequency.export" title="COM_REALESTATENOW_RENTAL_FREQUENCIES_EXPORT" description="COM_REALESTATENOW_RENTAL_FREQUENCIES_EXPORT_DESC" />
+		<action name="rental_frequency.import" title="COM_REALESTATENOW_RENTAL_FREQUENCIES_IMPORT" description="COM_REALESTATENOW_RENTAL_FREQUENCIES_IMPORT_DESC" />
+		<action name="rental_frequency.submenu" title="COM_REALESTATENOW_RENTAL_FREQUENCIES_SUBMENU" description="COM_REALESTATENOW_RENTAL_FREQUENCIES_SUBMENU_DESC" />
+		<action name="rental.access" title="COM_REALESTATENOW_RENTALS_ACCESS" description="COM_REALESTATENOW_RENTALS_ACCESS_DESC" />
+		<action name="rental.batch" title="COM_REALESTATENOW_RENTALS_BATCH_USE" description="COM_REALESTATENOW_RENTALS_BATCH_USE_DESC" />
+		<action name="rental.version" title="COM_REALESTATENOW_RENTALS_EDIT_VERSION" description="COM_REALESTATENOW_RENTALS_EDIT_VERSION_DESC" />
+		<action name="rental.export" title="COM_REALESTATENOW_RENTALS_EXPORT" description="COM_REALESTATENOW_RENTALS_EXPORT_DESC" />
+		<action name="rental.import" title="COM_REALESTATENOW_RENTALS_IMPORT" description="COM_REALESTATENOW_RENTALS_IMPORT_DESC" />
+		<action name="residential.access" title="COM_REALESTATENOW_RESIDENTIALS_ACCESS" description="COM_REALESTATENOW_RESIDENTIALS_ACCESS_DESC" />
+		<action name="residential.batch" title="COM_REALESTATENOW_RESIDENTIALS_BATCH_USE" description="COM_REALESTATENOW_RESIDENTIALS_BATCH_USE_DESC" />
+		<action name="residential.version" title="COM_REALESTATENOW_RESIDENTIALS_EDIT_VERSION" description="COM_REALESTATENOW_RESIDENTIALS_EDIT_VERSION_DESC" />
+		<action name="residential.export" title="COM_REALESTATENOW_RESIDENTIALS_EXPORT" description="COM_REALESTATENOW_RESIDENTIALS_EXPORT_DESC" />
+		<action name="residential.import" title="COM_REALESTATENOW_RESIDENTIALS_IMPORT" description="COM_REALESTATENOW_RESIDENTIALS_IMPORT_DESC" />
+		<action name="site.agencyagents.access" title="COM_REALESTATENOW_SINGLE_AGENCY_AGENTS_ACCESS_SITE" description="COM_REALESTATENOW_SINGLE_AGENCY_AGENTS_ACCESS_SITE_DESC" />
+		<action name="site.state.access" title="COM_REALESTATENOW_STATE_ACCESS_SITE" description="COM_REALESTATENOW_STATE_ACCESS_SITE_DESC" />
+		<action name="state.access" title="COM_REALESTATENOW_STATES_ACCESS" description="COM_REALESTATENOW_STATES_ACCESS_DESC" />
+		<action name="state.batch" title="COM_REALESTATENOW_STATES_BATCH_USE" description="COM_REALESTATENOW_STATES_BATCH_USE_DESC" />
+		<action name="state.create" title="COM_REALESTATENOW_STATES_CREATE" description="COM_REALESTATENOW_STATES_CREATE_DESC" />
+		<action name="state.dashboard_list" title="COM_REALESTATENOW_STATES_DASHBOARD_LIST" description="COM_REALESTATENOW_STATES_DASHBOARD_LIST_DESC" />
+		<action name="state.delete" title="COM_REALESTATENOW_STATES_DELETE" description="COM_REALESTATENOW_STATES_DELETE_DESC" />
+		<action name="state.edit" title="COM_REALESTATENOW_STATES_EDIT" description="COM_REALESTATENOW_STATES_EDIT_DESC" />
+		<action name="state.edit.created_by" title="COM_REALESTATENOW_STATES_EDIT_CREATED_BY" description="COM_REALESTATENOW_STATES_EDIT_CREATED_BY_DESC" />
+		<action name="state.edit.own" title="COM_REALESTATENOW_STATES_EDIT_OWN" description="COM_REALESTATENOW_STATES_EDIT_OWN_DESC" />
+		<action name="state.edit.state" title="COM_REALESTATENOW_STATES_EDIT_STATE" description="COM_REALESTATENOW_STATES_EDIT_STATE_DESC" />
+		<action name="state.version" title="COM_REALESTATENOW_STATES_EDIT_VERSION" description="COM_REALESTATENOW_STATES_EDIT_VERSION_DESC" />
+		<action name="state.export" title="COM_REALESTATENOW_STATES_EXPORT" description="COM_REALESTATENOW_STATES_EXPORT_DESC" />
+		<action name="state.import" title="COM_REALESTATENOW_STATES_IMPORT" description="COM_REALESTATENOW_STATES_IMPORT_DESC" />
+		<action name="state.submenu" title="COM_REALESTATENOW_STATES_SUBMENU" description="COM_REALESTATENOW_STATES_SUBMENU_DESC" />
+		<action name="site.transactiontype.access" title="COM_REALESTATENOW_TRANSACTION_TYPE_ACCESS_SITE" description="COM_REALESTATENOW_TRANSACTION_TYPE_ACCESS_SITE_DESC" />
+		<action name="transaction_type.access" title="COM_REALESTATENOW_TRANSACTION_TYPES_ACCESS" description="COM_REALESTATENOW_TRANSACTION_TYPES_ACCESS_DESC" />
+		<action name="transaction_type.batch" title="COM_REALESTATENOW_TRANSACTION_TYPES_BATCH_USE" description="COM_REALESTATENOW_TRANSACTION_TYPES_BATCH_USE_DESC" />
+		<action name="transaction_type.version" title="COM_REALESTATENOW_TRANSACTION_TYPES_EDIT_VERSION" description="COM_REALESTATENOW_TRANSACTION_TYPES_EDIT_VERSION_DESC" />
+		<action name="transaction_type.export" title="COM_REALESTATENOW_TRANSACTION_TYPES_EXPORT" description="COM_REALESTATENOW_TRANSACTION_TYPES_EXPORT_DESC" />
+		<action name="transaction_type.import" title="COM_REALESTATENOW_TRANSACTION_TYPES_IMPORT" description="COM_REALESTATENOW_TRANSACTION_TYPES_IMPORT_DESC" />
+		<action name="transaction_type.submenu" title="COM_REALESTATENOW_TRANSACTION_TYPES_SUBMENU" description="COM_REALESTATENOW_TRANSACTION_TYPES_SUBMENU_DESC" />
+	</section>
+	<section name="country">
+		<action name="country.edit" title="COM_REALESTATENOW_COUNTRIES_EDIT" description="COM_REALESTATENOW_COUNTRIES_EDIT_DESC" />
+		<action name="country.edit.own" title="COM_REALESTATENOW_COUNTRIES_EDIT_OWN" description="COM_REALESTATENOW_COUNTRIES_EDIT_OWN_DESC" />
+		<action name="country.edit.state" title="COM_REALESTATENOW_COUNTRIES_EDIT_STATE" description="COM_REALESTATENOW_COUNTRIES_EDIT_STATE_DESC" />
+		<action name="country.edit.created_by" title="COM_REALESTATENOW_COUNTRIES_EDIT_CREATED_BY" description="COM_REALESTATENOW_COUNTRIES_EDIT_CREATED_BY_DESC" />
+		<action name="country.edit.created" title="COM_REALESTATENOW_COUNTRIES_EDIT_CREATED_DATE" description="COM_REALESTATENOW_COUNTRIES_EDIT_CREATED_DATE_DESC" />
+		<action name="country.create" title="COM_REALESTATENOW_COUNTRIES_CREATE" description="COM_REALESTATENOW_COUNTRIES_CREATE_DESC" />
+		<action name="country.delete" title="COM_REALESTATENOW_COUNTRIES_DELETE" description="COM_REALESTATENOW_COUNTRIES_DELETE_DESC" />
+		<action name="country.access" title="COM_REALESTATENOW_COUNTRIES_ACCESS" description="COM_REALESTATENOW_COUNTRIES_ACCESS_DESC" />
+		<action name="country.version" title="COM_REALESTATENOW_COUNTRIES_EDIT_VERSION" description="COM_REALESTATENOW_COUNTRIES_EDIT_VERSION_DESC" />
+	</section>
+	<section name="state">
+		<action name="state.edit" title="COM_REALESTATENOW_STATES_EDIT" description="COM_REALESTATENOW_STATES_EDIT_DESC" />
+		<action name="state.edit.own" title="COM_REALESTATENOW_STATES_EDIT_OWN" description="COM_REALESTATENOW_STATES_EDIT_OWN_DESC" />
+		<action name="state.edit.state" title="COM_REALESTATENOW_STATES_EDIT_STATE" description="COM_REALESTATENOW_STATES_EDIT_STATE_DESC" />
+		<action name="state.edit.created_by" title="COM_REALESTATENOW_STATES_EDIT_CREATED_BY" description="COM_REALESTATENOW_STATES_EDIT_CREATED_BY_DESC" />
+		<action name="core.edit.created" title="COM_REALESTATENOW_STATES_EDIT_CREATED_DATE" description="COM_REALESTATENOW_STATES_EDIT_CREATED_DATE_DESC" />
+		<action name="state.create" title="COM_REALESTATENOW_STATES_CREATE" description="COM_REALESTATENOW_STATES_CREATE_DESC" />
+		<action name="state.delete" title="COM_REALESTATENOW_STATES_DELETE" description="COM_REALESTATENOW_STATES_DELETE_DESC" />
+		<action name="state.access" title="COM_REALESTATENOW_STATES_ACCESS" description="COM_REALESTATENOW_STATES_ACCESS_DESC" />
+		<action name="state.version" title="COM_REALESTATENOW_STATES_EDIT_VERSION" description="COM_REALESTATENOW_STATES_EDIT_VERSION_DESC" />
+	</section>
+	<section name="city">
+		<action name="city.edit" title="COM_REALESTATENOW_CITIES_EDIT" description="COM_REALESTATENOW_CITIES_EDIT_DESC" />
+		<action name="city.edit.own" title="COM_REALESTATENOW_CITIES_EDIT_OWN" description="COM_REALESTATENOW_CITIES_EDIT_OWN_DESC" />
+		<action name="city.edit.state" title="COM_REALESTATENOW_CITIES_EDIT_STATE" description="COM_REALESTATENOW_CITIES_EDIT_STATE_DESC" />
+		<action name="city.edit.created_by" title="COM_REALESTATENOW_CITIES_EDIT_CREATED_BY" description="COM_REALESTATENOW_CITIES_EDIT_CREATED_BY_DESC" />
+		<action name="city.edit.created" title="COM_REALESTATENOW_CITIES_EDIT_CREATED_DATE" description="COM_REALESTATENOW_CITIES_EDIT_CREATED_DATE_DESC" />
+		<action name="city.create" title="COM_REALESTATENOW_CITIES_CREATE" description="COM_REALESTATENOW_CITIES_CREATE_DESC" />
+		<action name="city.delete" title="COM_REALESTATENOW_CITIES_DELETE" description="COM_REALESTATENOW_CITIES_DELETE_DESC" />
+		<action name="city.access" title="COM_REALESTATENOW_CITIES_ACCESS" description="COM_REALESTATENOW_CITIES_ACCESS_DESC" />
+		<action name="city.version" title="COM_REALESTATENOW_CITIES_EDIT_VERSION" description="COM_REALESTATENOW_CITIES_EDIT_VERSION_DESC" />
+	</section>
+	<section name="agency">
+		<action name="agency.edit" title="COM_REALESTATENOW_AGENCIES_EDIT" description="COM_REALESTATENOW_AGENCIES_EDIT_DESC" />
+		<action name="agency.edit.own" title="COM_REALESTATENOW_AGENCIES_EDIT_OWN" description="COM_REALESTATENOW_AGENCIES_EDIT_OWN_DESC" />
+		<action name="agency.edit.state" title="COM_REALESTATENOW_AGENCIES_EDIT_STATE" description="COM_REALESTATENOW_AGENCIES_EDIT_STATE_DESC" />
+		<action name="agency.edit.created_by" title="COM_REALESTATENOW_AGENCIES_EDIT_CREATED_BY" description="COM_REALESTATENOW_AGENCIES_EDIT_CREATED_BY_DESC" />
+		<action name="agency.edit.created" title="COM_REALESTATENOW_AGENCIES_EDIT_CREATED_DATE" description="COM_REALESTATENOW_AGENCIES_EDIT_CREATED_DATE_DESC" />
+		<action name="agency.create" title="COM_REALESTATENOW_AGENCIES_CREATE" description="COM_REALESTATENOW_AGENCIES_CREATE_DESC" />
+		<action name="agency.delete" title="COM_REALESTATENOW_AGENCIES_DELETE" description="COM_REALESTATENOW_AGENCIES_DELETE_DESC" />
+		<action name="agency.access" title="COM_REALESTATENOW_AGENCIES_ACCESS" description="COM_REALESTATENOW_AGENCIES_ACCESS_DESC" />
+		<action name="agency.version" title="COM_REALESTATENOW_AGENCIES_EDIT_VERSION" description="COM_REALESTATENOW_AGENCIES_EDIT_VERSION_DESC" />
+	</section>
+	<section name="agent">
+		<action name="agent.edit" title="COM_REALESTATENOW_AGENTS_EDIT" description="COM_REALESTATENOW_AGENTS_EDIT_DESC" />
+		<action name="agent.edit.own" title="COM_REALESTATENOW_AGENTS_EDIT_OWN" description="COM_REALESTATENOW_AGENTS_EDIT_OWN_DESC" />
+		<action name="agent.edit.state" title="COM_REALESTATENOW_AGENTS_EDIT_STATE" description="COM_REALESTATENOW_AGENTS_EDIT_STATE_DESC" />
+		<action name="agent.edit.created_by" title="COM_REALESTATENOW_AGENTS_EDIT_CREATED_BY" description="COM_REALESTATENOW_AGENTS_EDIT_CREATED_BY_DESC" />
+		<action name="agent.edit.created" title="COM_REALESTATENOW_AGENTS_EDIT_CREATED_DATE" description="COM_REALESTATENOW_AGENTS_EDIT_CREATED_DATE_DESC" />
+		<action name="agent.create" title="COM_REALESTATENOW_AGENTS_CREATE" description="COM_REALESTATENOW_AGENTS_CREATE_DESC" />
+		<action name="agent.delete" title="COM_REALESTATENOW_AGENTS_DELETE" description="COM_REALESTATENOW_AGENTS_DELETE_DESC" />
+		<action name="agent.access" title="COM_REALESTATENOW_AGENTS_ACCESS" description="COM_REALESTATENOW_AGENTS_ACCESS_DESC" />
+		<action name="agent.version" title="COM_REALESTATENOW_AGENTS_EDIT_VERSION" description="COM_REALESTATENOW_AGENTS_EDIT_VERSION_DESC" />
+	</section>
+	<section name="property">
+		<action name="property.edit" title="COM_REALESTATENOW_PROPERTIES_EDIT" description="COM_REALESTATENOW_PROPERTIES_EDIT_DESC" />
+		<action name="property.edit.own" title="COM_REALESTATENOW_PROPERTIES_EDIT_OWN" description="COM_REALESTATENOW_PROPERTIES_EDIT_OWN_DESC" />
+		<action name="property.edit.state" title="COM_REALESTATENOW_PROPERTIES_EDIT_STATE" description="COM_REALESTATENOW_PROPERTIES_EDIT_STATE_DESC" />
+		<action name="property.edit.created_by" title="COM_REALESTATENOW_PROPERTIES_EDIT_CREATED_BY" description="COM_REALESTATENOW_PROPERTIES_EDIT_CREATED_BY_DESC" />
+		<action name="property.edit.created" title="COM_REALESTATENOW_PROPERTIES_EDIT_CREATED_DATE" description="COM_REALESTATENOW_PROPERTIES_EDIT_CREATED_DATE_DESC" />
+		<action name="property.create" title="COM_REALESTATENOW_PROPERTIES_CREATE" description="COM_REALESTATENOW_PROPERTIES_CREATE_DESC" />
+		<action name="property.delete" title="COM_REALESTATENOW_PROPERTIES_DELETE" description="COM_REALESTATENOW_PROPERTIES_DELETE_DESC" />
+		<action name="property.access" title="COM_REALESTATENOW_PROPERTIES_ACCESS" description="COM_REALESTATENOW_PROPERTIES_ACCESS_DESC" />
+		<action name="property.version" title="COM_REALESTATENOW_PROPERTIES_EDIT_VERSION" description="COM_REALESTATENOW_PROPERTIES_EDIT_VERSION_DESC" />
+	</section>
+	<section name="residential">
+		<action name="core.edit" title="COM_REALESTATENOW_RESIDENTIALS_EDIT" description="COM_REALESTATENOW_RESIDENTIALS_EDIT_DESC" />
+		<action name="core.edit.own" title="COM_REALESTATENOW_RESIDENTIALS_EDIT_OWN" description="COM_REALESTATENOW_RESIDENTIALS_EDIT_OWN_DESC" />
+		<action name="core.edit.state" title="COM_REALESTATENOW_RESIDENTIALS_EDIT_STATE" description="COM_REALESTATENOW_RESIDENTIALS_EDIT_STATE_DESC" />
+		<action name="core.edit.created_by" title="COM_REALESTATENOW_RESIDENTIALS_EDIT_CREATED_BY" description="COM_REALESTATENOW_RESIDENTIALS_EDIT_CREATED_BY_DESC" />
+		<action name="core.edit.created" title="COM_REALESTATENOW_RESIDENTIALS_EDIT_CREATED_DATE" description="COM_REALESTATENOW_RESIDENTIALS_EDIT_CREATED_DATE_DESC" />
+		<action name="core.create" title="COM_REALESTATENOW_RESIDENTIALS_CREATE" description="COM_REALESTATENOW_RESIDENTIALS_CREATE_DESC" />
+		<action name="core.delete" title="COM_REALESTATENOW_RESIDENTIALS_DELETE" description="COM_REALESTATENOW_RESIDENTIALS_DELETE_DESC" />
+		<action name="residential.access" title="COM_REALESTATENOW_RESIDENTIALS_ACCESS" description="COM_REALESTATENOW_RESIDENTIALS_ACCESS_DESC" />
+		<action name="residential.version" title="COM_REALESTATENOW_RESIDENTIALS_EDIT_VERSION" description="COM_REALESTATENOW_RESIDENTIALS_EDIT_VERSION_DESC" />
+	</section>
+	<section name="land">
+		<action name="core.edit" title="COM_REALESTATENOW_LANDS_EDIT" description="COM_REALESTATENOW_LANDS_EDIT_DESC" />
+		<action name="core.edit.own" title="COM_REALESTATENOW_LANDS_EDIT_OWN" description="COM_REALESTATENOW_LANDS_EDIT_OWN_DESC" />
+		<action name="core.edit.state" title="COM_REALESTATENOW_LANDS_EDIT_STATE" description="COM_REALESTATENOW_LANDS_EDIT_STATE_DESC" />
+		<action name="core.edit.created_by" title="COM_REALESTATENOW_LANDS_EDIT_CREATED_BY" description="COM_REALESTATENOW_LANDS_EDIT_CREATED_BY_DESC" />
+		<action name="core.edit.created" title="COM_REALESTATENOW_LANDS_EDIT_CREATED_DATE" description="COM_REALESTATENOW_LANDS_EDIT_CREATED_DATE_DESC" />
+		<action name="core.create" title="COM_REALESTATENOW_LANDS_CREATE" description="COM_REALESTATENOW_LANDS_CREATE_DESC" />
+		<action name="core.delete" title="COM_REALESTATENOW_LANDS_DELETE" description="COM_REALESTATENOW_LANDS_DELETE_DESC" />
+		<action name="land.access" title="COM_REALESTATENOW_LANDS_ACCESS" description="COM_REALESTATENOW_LANDS_ACCESS_DESC" />
+		<action name="land.version" title="COM_REALESTATENOW_LANDS_EDIT_VERSION" description="COM_REALESTATENOW_LANDS_EDIT_VERSION_DESC" />
+	</section>
+	<section name="commercial">
+		<action name="core.edit" title="COM_REALESTATENOW_COMMERCIALS_EDIT" description="COM_REALESTATENOW_COMMERCIALS_EDIT_DESC" />
+		<action name="core.edit.own" title="COM_REALESTATENOW_COMMERCIALS_EDIT_OWN" description="COM_REALESTATENOW_COMMERCIALS_EDIT_OWN_DESC" />
+		<action name="core.edit.state" title="COM_REALESTATENOW_COMMERCIALS_EDIT_STATE" description="COM_REALESTATENOW_COMMERCIALS_EDIT_STATE_DESC" />
+		<action name="core.edit.created_by" title="COM_REALESTATENOW_COMMERCIALS_EDIT_CREATED_BY" description="COM_REALESTATENOW_COMMERCIALS_EDIT_CREATED_BY_DESC" />
+		<action name="core.edit.created" title="COM_REALESTATENOW_COMMERCIALS_EDIT_CREATED_DATE" description="COM_REALESTATENOW_COMMERCIALS_EDIT_CREATED_DATE_DESC" />
+		<action name="core.create" title="COM_REALESTATENOW_COMMERCIALS_CREATE" description="COM_REALESTATENOW_COMMERCIALS_CREATE_DESC" />
+		<action name="core.delete" title="COM_REALESTATENOW_COMMERCIALS_DELETE" description="COM_REALESTATENOW_COMMERCIALS_DELETE_DESC" />
+		<action name="commercial.access" title="COM_REALESTATENOW_COMMERCIALS_ACCESS" description="COM_REALESTATENOW_COMMERCIALS_ACCESS_DESC" />
+		<action name="commercial.version" title="COM_REALESTATENOW_COMMERCIALS_EDIT_VERSION" description="COM_REALESTATENOW_COMMERCIALS_EDIT_VERSION_DESC" />
+	</section>
+	<section name="multifamily">
+		<action name="core.edit" title="COM_REALESTATENOW_MULTIFAMILIES_EDIT" description="COM_REALESTATENOW_MULTIFAMILIES_EDIT_DESC" />
+		<action name="core.edit.own" title="COM_REALESTATENOW_MULTIFAMILIES_EDIT_OWN" description="COM_REALESTATENOW_MULTIFAMILIES_EDIT_OWN_DESC" />
+		<action name="core.edit.state" title="COM_REALESTATENOW_MULTIFAMILIES_EDIT_STATE" description="COM_REALESTATENOW_MULTIFAMILIES_EDIT_STATE_DESC" />
+		<action name="core.edit.created_by" title="COM_REALESTATENOW_MULTIFAMILIES_EDIT_CREATED_BY" description="COM_REALESTATENOW_MULTIFAMILIES_EDIT_CREATED_BY_DESC" />
+		<action name="core.edit.created" title="COM_REALESTATENOW_MULTIFAMILIES_EDIT_CREATED_DATE" description="COM_REALESTATENOW_MULTIFAMILIES_EDIT_CREATED_DATE_DESC" />
+		<action name="core.create" title="COM_REALESTATENOW_MULTIFAMILIES_CREATE" description="COM_REALESTATENOW_MULTIFAMILIES_CREATE_DESC" />
+		<action name="core.delete" title="COM_REALESTATENOW_MULTIFAMILIES_DELETE" description="COM_REALESTATENOW_MULTIFAMILIES_DELETE_DESC" />
+		<action name="multifamily.access" title="COM_REALESTATENOW_MULTIFAMILIES_ACCESS" description="COM_REALESTATENOW_MULTIFAMILIES_ACCESS_DESC" />
+		<action name="multifamily.version" title="COM_REALESTATENOW_MULTIFAMILIES_EDIT_VERSION" description="COM_REALESTATENOW_MULTIFAMILIES_EDIT_VERSION_DESC" />
+	</section>
+	<section name="area">
+		<action name="core.edit" title="COM_REALESTATENOW_AREAS_EDIT" description="COM_REALESTATENOW_AREAS_EDIT_DESC" />
+		<action name="core.edit.own" title="COM_REALESTATENOW_AREAS_EDIT_OWN" description="COM_REALESTATENOW_AREAS_EDIT_OWN_DESC" />
+		<action name="core.edit.state" title="COM_REALESTATENOW_AREAS_EDIT_STATE" description="COM_REALESTATENOW_AREAS_EDIT_STATE_DESC" />
+		<action name="core.edit.created_by" title="COM_REALESTATENOW_AREAS_EDIT_CREATED_BY" description="COM_REALESTATENOW_AREAS_EDIT_CREATED_BY_DESC" />
+		<action name="core.edit.created" title="COM_REALESTATENOW_AREAS_EDIT_CREATED_DATE" description="COM_REALESTATENOW_AREAS_EDIT_CREATED_DATE_DESC" />
+		<action name="core.create" title="COM_REALESTATENOW_AREAS_CREATE" description="COM_REALESTATENOW_AREAS_CREATE_DESC" />
+		<action name="core.delete" title="COM_REALESTATENOW_AREAS_DELETE" description="COM_REALESTATENOW_AREAS_DELETE_DESC" />
+		<action name="area.access" title="COM_REALESTATENOW_AREAS_ACCESS" description="COM_REALESTATENOW_AREAS_ACCESS_DESC" />
+		<action name="area.version" title="COM_REALESTATENOW_AREAS_EDIT_VERSION" description="COM_REALESTATENOW_AREAS_EDIT_VERSION_DESC" />
+	</section>
+	<section name="feature">
+		<action name="core.edit" title="COM_REALESTATENOW_FEATURES_EDIT" description="COM_REALESTATENOW_FEATURES_EDIT_DESC" />
+		<action name="core.edit.own" title="COM_REALESTATENOW_FEATURES_EDIT_OWN" description="COM_REALESTATENOW_FEATURES_EDIT_OWN_DESC" />
+		<action name="core.edit.state" title="COM_REALESTATENOW_FEATURES_EDIT_STATE" description="COM_REALESTATENOW_FEATURES_EDIT_STATE_DESC" />
+		<action name="core.edit.created_by" title="COM_REALESTATENOW_FEATURES_EDIT_CREATED_BY" description="COM_REALESTATENOW_FEATURES_EDIT_CREATED_BY_DESC" />
+		<action name="core.edit.created" title="COM_REALESTATENOW_FEATURES_EDIT_CREATED_DATE" description="COM_REALESTATENOW_FEATURES_EDIT_CREATED_DATE_DESC" />
+		<action name="core.create" title="COM_REALESTATENOW_FEATURES_CREATE" description="COM_REALESTATENOW_FEATURES_CREATE_DESC" />
+		<action name="core.delete" title="COM_REALESTATENOW_FEATURES_DELETE" description="COM_REALESTATENOW_FEATURES_DELETE_DESC" />
+		<action name="feature.access" title="COM_REALESTATENOW_FEATURES_ACCESS" description="COM_REALESTATENOW_FEATURES_ACCESS_DESC" />
+		<action name="feature.version" title="COM_REALESTATENOW_FEATURES_EDIT_VERSION" description="COM_REALESTATENOW_FEATURES_EDIT_VERSION_DESC" />
+	</section>
+	<section name="financial">
+		<action name="core.edit" title="COM_REALESTATENOW_FINANCIALS_EDIT" description="COM_REALESTATENOW_FINANCIALS_EDIT_DESC" />
+		<action name="core.edit.own" title="COM_REALESTATENOW_FINANCIALS_EDIT_OWN" description="COM_REALESTATENOW_FINANCIALS_EDIT_OWN_DESC" />
+		<action name="core.edit.state" title="COM_REALESTATENOW_FINANCIALS_EDIT_STATE" description="COM_REALESTATENOW_FINANCIALS_EDIT_STATE_DESC" />
+		<action name="core.edit.created_by" title="COM_REALESTATENOW_FINANCIALS_EDIT_CREATED_BY" description="COM_REALESTATENOW_FINANCIALS_EDIT_CREATED_BY_DESC" />
+		<action name="core.edit.created" title="COM_REALESTATENOW_FINANCIALS_EDIT_CREATED_DATE" description="COM_REALESTATENOW_FINANCIALS_EDIT_CREATED_DATE_DESC" />
+		<action name="core.create" title="COM_REALESTATENOW_FINANCIALS_CREATE" description="COM_REALESTATENOW_FINANCIALS_CREATE_DESC" />
+		<action name="core.delete" title="COM_REALESTATENOW_FINANCIALS_DELETE" description="COM_REALESTATENOW_FINANCIALS_DELETE_DESC" />
+		<action name="financial.access" title="COM_REALESTATENOW_FINANCIALS_ACCESS" description="COM_REALESTATENOW_FINANCIALS_ACCESS_DESC" />
+		<action name="financial.version" title="COM_REALESTATENOW_FINANCIALS_EDIT_VERSION" description="COM_REALESTATENOW_FINANCIALS_EDIT_VERSION_DESC" />
+	</section>
+	<section name="rental">
+		<action name="core.edit" title="COM_REALESTATENOW_RENTALS_EDIT" description="COM_REALESTATENOW_RENTALS_EDIT_DESC" />
+		<action name="core.edit.own" title="COM_REALESTATENOW_RENTALS_EDIT_OWN" description="COM_REALESTATENOW_RENTALS_EDIT_OWN_DESC" />
+		<action name="core.edit.state" title="COM_REALESTATENOW_RENTALS_EDIT_STATE" description="COM_REALESTATENOW_RENTALS_EDIT_STATE_DESC" />
+		<action name="core.edit.created_by" title="COM_REALESTATENOW_RENTALS_EDIT_CREATED_BY" description="COM_REALESTATENOW_RENTALS_EDIT_CREATED_BY_DESC" />
+		<action name="core.edit.created" title="COM_REALESTATENOW_RENTALS_EDIT_CREATED_DATE" description="COM_REALESTATENOW_RENTALS_EDIT_CREATED_DATE_DESC" />
+		<action name="core.create" title="COM_REALESTATENOW_RENTALS_CREATE" description="COM_REALESTATENOW_RENTALS_CREATE_DESC" />
+		<action name="core.delete" title="COM_REALESTATENOW_RENTALS_DELETE" description="COM_REALESTATENOW_RENTALS_DELETE_DESC" />
+		<action name="rental.access" title="COM_REALESTATENOW_RENTALS_ACCESS" description="COM_REALESTATENOW_RENTALS_ACCESS_DESC" />
+		<action name="rental.version" title="COM_REALESTATENOW_RENTALS_EDIT_VERSION" description="COM_REALESTATENOW_RENTALS_EDIT_VERSION_DESC" />
+	</section>
+	<section name="market_status">
+		<action name="market_status.version" title="COM_REALESTATENOW_MARKET_STATUSES_EDIT_VERSION" description="COM_REALESTATENOW_MARKET_STATUSES_EDIT_VERSION_DESC" />
+	</section>
+	<section name="transaction_type">
+		<action name="transaction_type.version" title="COM_REALESTATENOW_TRANSACTION_TYPES_EDIT_VERSION" description="COM_REALESTATENOW_TRANSACTION_TYPES_EDIT_VERSION_DESC" />
+	</section>
+	<section name="rental_frequency">
+		<action name="rental_frequency.version" title="COM_REALESTATENOW_RENTAL_FREQUENCIES_EDIT_VERSION" description="COM_REALESTATENOW_RENTAL_FREQUENCIES_EDIT_VERSION_DESC" />
+	</section>
+	<section name="rent_type">
+		<action name="rent_type.version" title="COM_REALESTATENOW_RENT_TYPES_EDIT_VERSION" description="COM_REALESTATENOW_RENT_TYPES_EDIT_VERSION_DESC" />
+	</section>
+	<section name="feature_type">
+		<action name="feature_type.version" title="COM_REALESTATENOW_FEATURE_TYPES_EDIT_VERSION" description="COM_REALESTATENOW_FEATURE_TYPES_EDIT_VERSION_DESC" />
+	</section>
+	<section name="mls">
+		<action name="mls.version" title="COM_REALESTATENOW_MLS_RECORDS_EDIT_VERSION" description="COM_REALESTATENOW_MLS_RECORDS_EDIT_VERSION_DESC" />
+	</section>
+	<section name="favorite_listing">
+		<action name="favorite_listing.edit.own" title="COM_REALESTATENOW_FAVORITE_LISTINGS_EDIT_OWN" description="COM_REALESTATENOW_FAVORITE_LISTINGS_EDIT_OWN_DESC" />
+		<action name="favorite_listing.edit.created_by" title="COM_REALESTATENOW_FAVORITE_LISTINGS_EDIT_CREATED_BY" description="COM_REALESTATENOW_FAVORITE_LISTINGS_EDIT_CREATED_BY_DESC" />
+		<action name="favorite_listing.version" title="COM_REALESTATENOW_FAVORITE_LISTINGS_EDIT_VERSION" description="COM_REALESTATENOW_FAVORITE_LISTINGS_EDIT_VERSION_DESC" />
+	</section>
+	<section name="image">
+		<action name="image.version" title="COM_REALESTATENOW_IMAGES_EDIT_VERSION" description="COM_REALESTATENOW_IMAGES_EDIT_VERSION_DESC" />
+	</section>
+	<section name="category.agents">
+		<action name="core.create" title="JACTION_CREATE" description="JACTION_CREATE_COMPONENT_DESC" />
+		<action name="core.delete" title="JACTION_DELETE" description="COM_CATEGORIES_ACCESS_DELETE_DESC" />
+		<action name="core.edit" title="JACTION_EDIT" description="COM_CATEGORIES_ACCESS_EDIT_DESC" />
+		<action name="core.edit.state" title="JACTION_EDITSTATE" description="COM_CATEGORIES_ACCESS_EDITSTATE_DESC" />
+		<action name="core.edit.own" title="JACTION_EDITOWN" description="COM_CATEGORIES_ACCESS_EDITOWN_DESC" />
+	</section>
+	<section name="category.properties">
+		<action name="core.create" title="JACTION_CREATE" description="JACTION_CREATE_COMPONENT_DESC" />
+		<action name="core.delete" title="JACTION_DELETE" description="COM_CATEGORIES_ACCESS_DELETE_DESC" />
+		<action name="core.edit" title="JACTION_EDIT" description="COM_CATEGORIES_ACCESS_EDIT_DESC" />
+		<action name="core.edit.state" title="JACTION_EDITSTATE" description="COM_CATEGORIES_ACCESS_EDITSTATE_DESC" />
+		<action name="core.edit.own" title="JACTION_EDITOWN" description="COM_CATEGORIES_ACCESS_EDITOWN_DESC" />
+	</section>
+</access>

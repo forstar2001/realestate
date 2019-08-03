@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<metadata>
+	<layout title="COM_REALESTATENOW_MENU_CITIES_TITLE" option="COM_REALESTATENOW_MENU_CITIES_OPTION">
+		<message>
+			<![CDATA[COM_REALESTATENOW_MENU_CITIES_DESC]]>
+		</message>
+	</layout>
+	<!-- [Interpretation 1525] Adding page parameters -->
+	<fields name="params">
+		<fieldset name="basic" label="COM_REALESTATENOW"
+			addrulepath="/administrator/components/com_realestatenow/models/rules"
+			addfieldpath="/administrator/components/com_realestatenow/models/fields">
+	<!--  [Fields 1577] Cities_display Field. Type: Radio. (joomla) -->
+	<field type="radio"
+               name="cities_display"
+               label="COM_REALESTATENOW_CONFIG_CITIES_DISPLAY_LABEL"
+               class="btn-group btn-group-yesno"
+               default="1">
+                <!-- [Fields 1587] Option Set.-->
+                <option value="1">COM_REALESTATENOW_CONFIG_GRID</option>
+                <option value="2">COM_REALESTATENOW_CONFIG_PANEL</option>
+        </field>
+		</fieldset>
+	</fields>
+</metadata>

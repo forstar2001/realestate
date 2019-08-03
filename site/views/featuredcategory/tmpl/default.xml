@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<metadata>
+	<layout title="COM_REALESTATENOW_MENU_FEATUREDCATEGORY_TITLE" option="COM_REALESTATENOW_MENU_FEATUREDCATEGORY_OPTION">
+		<message>
+			<![CDATA[COM_REALESTATENOW_MENU_FEATUREDCATEGORY_DESC]]>
+		</message>
+	</layout>
+	<!-- [Interpretation 1487] Add fields to the request variables for the layout. -->
+	<fields name="request">
+		<fieldset name="request"
+			addrulepath="/administrator/components/com_realestatenow/models/rules"
+			addfieldpath="/administrator/components/com_realestatenow/models/fields">
+			<field
+					name="task"
+					type="hidden"
+					default="featuredcategory.display">
+			</field>
+			<!--  [Fields 1633] Featuredcategory_request_id Field. Type: Category. (joomla) -->
+			<field type="category"
+					   name="categoryids"
+					   label="COM_REALESTATENOW_CONFIG_FEATUREDCATEGORY_REQUEST_ID_LABEL"
+					   extension="com_realestatenow.properties"
+					   required="false"
+					   description="COM_REALESTATENOW_CONFIG_FEATUREDCATEGORY_REQUEST_ID_DESCRIPTION"
+					   class="inputbox" />
+
+
+		</fieldset>
+	</fields>
+</metadata>

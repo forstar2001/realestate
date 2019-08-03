@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<metadata>
+	<layout title="COM_REALESTATENOW_MENU_PROPERTY_TITLE" option="COM_REALESTATENOW_MENU_PROPERTY_OPTION">
+		<message>
+			<![CDATA[COM_REALESTATENOW_MENU_PROPERTY_DESC]]>
+		</message>
+	</layout>
+	<!-- [Interpretation 1496] Add fields to the request variables for the layout. -->
+	<fields name="request">
+		<fieldset name="request"
+			addrulepath="/administrator/components/com_realestatenow/models/rules"
+			addfieldpath="/administrator/components/com_realestatenow/models/fields">
+			
+	<!--  [Fields 1897] Property_request_id Field. Type: Listings. (custom) -->
+	<field type="listings"
+               name="id"
+               label="COM_REALESTATENOW_CONFIG_PROPERTY_REQUEST_ID_LABEL"
+               description="COM_REALESTATENOW_CONFIG_PROPERTY_REQUEST_ID_DESCRIPTION"
+               class="list_class"
+               multiple="false"
+               default="0"
+               required="true"
+               button="false" />
+		</fieldset>
+	</fields>
+	<!-- [Interpretation 1525] Adding page parameters -->
+	<fields name="params">
+		<fieldset name="basic" label="COM_REALESTATENOW"
+			addrulepath="/administrator/components/com_realestatenow/models/rules"
+			addfieldpath="/administrator/components/com_realestatenow/models/fields">
+	<!--  [Fields 1577] Property_layout Field. Type: Radio. (joomla) -->
+	<field type="radio"
+               name="property_layout"
+               label="COM_REALESTATENOW_CONFIG_PROPERTY_LAYOUT_LABEL"
+               description="COM_REALESTATENOW_CONFIG_PROPERTY_LAYOUT_DESCRIPTION"
+               class="btn-group btn-group-yesno"
+               default="1">
+                <!-- [Fields 1587] Option Set.-->
+                <option value="1">COM_REALESTATENOW_CONFIG_GRID</option>
+                <option value="2">COM_REALESTATENOW_CONFIG_FLAT</option>
+                <option value="3">COM_REALESTATENOW_CONFIG_TABBED</option>
+                <option value="4">COM_REALESTATENOW_CONFIG_ACCORDION</option>
+                <option value="5">COM_REALESTATENOW_CONFIG_QUICK_GRID</option>
+        </field>			
+	<!--  [Fields 1657] Propheaderbtncolor Field. Type: Color. (joomla) -->
+	<field type="color"
+               name="propheaderbtncolor"
+               default="#FFFFFF"
+               label="COM_REALESTATENOW_CONFIG_PROPHEADERBTNCOLOR_LABEL"
+               description="COM_REALESTATENOW_CONFIG_PROPHEADERBTNCOLOR_DESCRIPTION" />			
+	<!--  [Fields 1657] Propheaderbtntxtcolor Field. Type: Color. (joomla) -->
+	<field type="color"
+               name="propheaderbtntxtcolor"
+               default=""
+               label="COM_REALESTATENOW_CONFIG_PROPHEADERBTNTXTCOLOR_LABEL"
+               description="COM_REALESTATENOW_CONFIG_PROPHEADERBTNTXTCOLOR_DESCRIPTION" />			
+	<!--  [Fields 1657] Property_map_zoom Field. Type: Text. (joomla) -->
+	<field type="text"
+               name="property_map_zoom"
+               label="COM_REALESTATENOW_CONFIG_PROPERTY_MAP_ZOOM_LABEL"
+               size="10"
+               maxlength="50"
+               default="15"
+               description="COM_REALESTATENOW_CONFIG_PROPERTY_MAP_ZOOM_DESCRIPTION"
+               class="text_area"
+               readonly="false"
+               disabled="false"
+               required="false"
+               filter="STRING"
+               message="COM_REALESTATENOW_CONFIG_PROPERTY_MAP_ZOOM_MESSAGE" />			
+	<!--  [Fields 1577] Property_data_layout Field. Type: List. (joomla) -->
+	<field type="list"
+               name="property_data_layout"
+               label="COM_REALESTATENOW_CONFIG_PROPERTY_DATA_LAYOUT_LABEL"
+               class="list_class"
+               multiple="false"
+               default="0">
+                <!-- [Fields 1587] Option Set.-->
+                <option value="uk-description-list-horizontal">COM_REALESTATENOW_CONFIG_LIST</option>
+                <option value="uk-description-list-line">COM_REALESTATENOW_CONFIG_STACKED</option>
+        </field>			
+	<!--  [Fields 1577] Property_slideshow Field. Type: Radio. (joomla) -->
+	<field type="radio"
+               name="property_slideshow"
+               label="COM_REALESTATENOW_CONFIG_PROPERTY_SLIDESHOW_LABEL"
+               class="btn-group btn-group-yesno"
+               default="1">
+                <!-- [Fields 1587] Option Set.-->
+                <option value="1">COM_REALESTATENOW_CONFIG_YES</option>
+                <option value="0">COM_REALESTATENOW_CONFIG_NO</option>
+        </field>			
+	<!--  [Fields 1577] Slideshow_transtype Field. Type: List. (joomla) -->
+	<field type="list"
+               name="slideshow_transtype"
+               label="COM_REALESTATENOW_CONFIG_SLIDESHOW_TRANSTYPE_LABEL"
+               class="list_class"
+               multiple="false"
+               default="0"
+               showon="property_slideshow:1">
+                <!-- [Fields 1587] Option Set.-->
+                <option value="scroll">COM_REALESTATENOW_CONFIG_SCROLL</option>
+                <option value="fade">COM_REALESTATENOW_CONFIG_FADE</option>
+                <option value="scale">COM_REALESTATENOW_CONFIG_SCALE</option>
+                <option value="swipe">COM_REALESTATENOW_CONFIG_SWIPE</option>
+                <option value="slice-down">COM_REALESTATENOW_CONFIG_SLICE_DOWN</option>
+                <option value="slice-up">COM_REALESTATENOW_CONFIG_SLICE_UP</option>
+                <option value="slice-up-down">COM_REALESTATENOW_CONFIG_SLICE_UPDOWN</option>
+                <option value="fold">COM_REALESTATENOW_CONFIG_FOLD</option>
+                <option value="puzzle">COM_REALESTATENOW_CONFIG_PUZZLE</option>
+                <option value="boxes">COM_REALESTATENOW_CONFIG_BOXES</option>
+                <option value="boxes-reverse">COM_REALESTATENOW_CONFIG_BOXES_REVERSE</option>
+                <option value="random-fx">COM_REALESTATENOW_CONFIG_RANDOM</option>
+        </field>			
+	<!--  [Fields 1657] Slider_autoplay_duration Field. Type: Number. (joomla) -->
+	<field type="number"
+               name="slider_autoplay_duration"
+               label="COM_REALESTATENOW_CONFIG_SLIDER_AUTOPLAY_DURATION_LABEL"
+               default="3000"
+               class="text_area"
+               min="1"
+               max="10000"
+               step="5"
+               showon="property_slideshow:1" />			
+	<!--  [Fields 1577] Mw_areameasure Field. Type: Radio. (joomla) -->
+	<field type="radio"
+               name="mw_areameasure"
+               label="COM_REALESTATENOW_CONFIG_MW_AREAMEASURE_LABEL"
+               description="COM_REALESTATENOW_CONFIG_MW_AREAMEASURE_DESCRIPTION"
+               class="btn-group btn-group-yesno"
+               default="1">
+                <!-- [Fields 1587] Option Set.-->
+                <option value="1">COM_REALESTATENOW_CONFIG_SQUARE_FEET</option>
+                <option value="2">COM_REALESTATENOW_CONFIG_METERS_SQUARED</option>
+        </field>			
+	<!--  [Fields 1671] Simprop_spacer Field. Type: Note. A None Database Field. (joomla) -->
+	<field type="note"
+               name="simprop_spacer"
+               label="COM_REALESTATENOW_CONFIG_SIMPROP_SPACER_LABEL"
+               description="COM_REALESTATENOW_CONFIG_SIMPROP_SPACER_DESCRIPTION"
+               heading="h4"
+               class="alert simprop_spacer"
+               close="false" />			
+	<!--  [Fields 1577] Mw_usesimilar Field. Type: Radio. (joomla) -->
+	<field type="radio"
+               name="mw_usesimilar"
+               label="COM_REALESTATENOW_CONFIG_MW_USESIMILAR_LABEL"
+               description="COM_REALESTATENOW_CONFIG_MW_USESIMILAR_DESCRIPTION"
+               class="btn-group btn-group-yesno"
+               default="0">
+                <!-- [Fields 1587] Option Set.-->
+                <option value="1">COM_REALESTATENOW_CONFIG_YES</option>
+                <option value="0">COM_REALESTATENOW_CONFIG_NO</option>
+        </field>			
+	<!--  [Fields 1657] Mw_simnum Field. Type: Text. (joomla) -->
+	<field type="text"
+               name="mw_simnum"
+               label="COM_REALESTATENOW_CONFIG_MW_SIMNUM_LABEL"
+               size="10"
+               maxlength="50"
+               default="5"
+               description="COM_REALESTATENOW_CONFIG_MW_SIMNUM_DESCRIPTION"
+               class="text_area"
+               readonly="false"
+               disabled="false"
+               required="false"
+               filter="STRING"
+               message="COM_REALESTATENOW_CONFIG_MW_SIMNUM_MESSAGE"
+               hint="COM_REALESTATENOW_CONFIG_MW_SIMNUM_HINT" />			
+	<!--  [Fields 1577] Mw_usesecondary Field. Type: Radio. (joomla) -->
+	<field type="radio"
+               name="mw_usesecondary"
+               label="COM_REALESTATENOW_CONFIG_MW_USESECONDARY_LABEL"
+               description="COM_REALESTATENOW_CONFIG_MW_USESECONDARY_DESCRIPTION"
+               class="btn-group btn-group-yesno"
+               default="0">
+                <!-- [Fields 1587] Option Set.-->
+                <option value="1">COM_REALESTATENOW_CONFIG_YES</option>
+                <option value="0">COM_REALESTATENOW_CONFIG_NO</option>
+        </field>			
+	<!--  [Fields 1577] Presentedby Field. Type: Radio. (joomla) -->
+	<field type="radio"
+               name="presentedby"
+               label="COM_REALESTATENOW_CONFIG_PRESENTEDBY_LABEL"
+               class="btn-group btn-group-yesno"
+               default="0"
+               readonly="false"
+               disabled="false">
+                <!-- [Fields 1587] Option Set.-->
+                <option value="1">COM_REALESTATENOW_CONFIG_AGENCY_AGENT</option>
+                <option value="0">COM_REALESTATENOW_CONFIG_AGENCY</option>
+        </field>			
+	<!--  [Fields 1577] Mw_country Field. Type: Radio. (joomla) -->
+	<field type="radio"
+               name="mw_country"
+               label="COM_REALESTATENOW_CONFIG_MW_COUNTRY_LABEL"
+               description="COM_REALESTATENOW_CONFIG_MW_COUNTRY_DESCRIPTION"
+               class="btn-group btn-group-yesno"
+               default="0">
+                <!-- [Fields 1587] Option Set.-->
+                <option value="1">COM_REALESTATENOW_CONFIG_YES</option>
+                <option value="0">COM_REALESTATENOW_CONFIG_NO</option>
+        </field>
+		</fieldset>
+	</fields>
+</metadata>

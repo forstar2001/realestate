@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<metadata>
+	<layout title="COM_REALESTATENOW_MENU_AGENTS_TITLE" option="COM_REALESTATENOW_MENU_AGENTS_OPTION">
+		<message>
+			<![CDATA[COM_REALESTATENOW_MENU_AGENTS_DESC]]>
+		</message>
+	</layout>
+	<!-- [Interpretation 1525] Adding page parameters -->
+	<fields name="params">
+		<fieldset name="basic" label="COM_REALESTATENOW"
+			addrulepath="/administrator/components/com_realestatenow/models/rules"
+			addfieldpath="/administrator/components/com_realestatenow/models/fields">
+	<!--  [Fields 1577] Agents_display Field. Type: Radio. (joomla) -->
+	<field type="radio"
+               name="agents_display"
+               label="COM_REALESTATENOW_CONFIG_AGENTS_DISPLAY_LABEL"
+               class="btn-group btn-group-yesno"
+               default="1">
+                <!-- [Fields 1587] Option Set.-->
+                <option value="1">COM_REALESTATENOW_CONFIG_GRID</option>
+                <option value="2">COM_REALESTATENOW_CONFIG_PANEL</option>
+        </field>			
+	<!--  [Fields 1577] Showagtaddylist Field. Type: Radio. (joomla) -->
+	<field type="radio"
+               name="showagtaddylist"
+               label="COM_REALESTATENOW_CONFIG_SHOWAGTADDYLIST_LABEL"
+               description="COM_REALESTATENOW_CONFIG_SHOWAGTADDYLIST_DESCRIPTION"
+               class="btn-group btn-group-yesno"
+               default="0">
+                <!-- [Fields 1587] Option Set.-->
+                <option value="1">COM_REALESTATENOW_CONFIG_SHOW</option>
+                <option value="0">COM_REALESTATENOW_CONFIG_HIDE</option>
+        </field>			
+	<!--  [Fields 1577] Showagtcontactist Field. Type: Radio. (joomla) -->
+	<field type="radio"
+               name="showagtcontactist"
+               label="COM_REALESTATENOW_CONFIG_SHOWAGTCONTACTIST_LABEL"
+               description="COM_REALESTATENOW_CONFIG_SHOWAGTCONTACTIST_DESCRIPTION"
+               class="btn-group btn-group-yesno"
+               default="0">
+                <!-- [Fields 1587] Option Set.-->
+                <option value="1">COM_REALESTATENOW_CONFIG_SHOW</option>
+                <option value="0">COM_REALESTATENOW_CONFIG_HIDE</option>
+        </field>			
+	<!--  [Fields 1657] Viewagentbtncolor Field. Type: Color. (joomla) -->
+	<field type="color"
+               name="viewagentbtncolor"
+               default=""
+               label="COM_REALESTATENOW_CONFIG_VIEWAGENTBTNCOLOR_LABEL"
+               description="COM_REALESTATENOW_CONFIG_VIEWAGENTBTNCOLOR_DESCRIPTION" />			
+	<!--  [Fields 1657] Viewagentbtntxtcolor Field. Type: Color. (joomla) -->
+	<field type="color"
+               name="viewagentbtntxtcolor"
+               default=""
+               label="COM_REALESTATENOW_CONFIG_VIEWAGENTBTNTXTCOLOR_LABEL"
+               description="COM_REALESTATENOW_CONFIG_VIEWAGENTBTNTXTCOLOR_DESCRIPTION" />			
+	<!--  [Fields 1657] Editagentbtncolor Field. Type: Color. (joomla) -->
+	<field type="color"
+               name="editagentbtncolor"
+               default=""
+               label="COM_REALESTATENOW_CONFIG_EDITAGENTBTNCOLOR_LABEL"
+               description="COM_REALESTATENOW_CONFIG_EDITAGENTBTNCOLOR_DESCRIPTION" />			
+	<!--  [Fields 1657] Editagentbtntxtcolor Field. Type: Color. (joomla) -->
+	<field type="color"
+               name="editagentbtntxtcolor"
+               default=""
+               label="COM_REALESTATENOW_CONFIG_EDITAGENTBTNTXTCOLOR_LABEL"
+               description="COM_REALESTATENOW_CONFIG_EDITAGENTBTNTXTCOLOR_DESCRIPTION" />
+		</fieldset>
+	</fields>
+</metadata>

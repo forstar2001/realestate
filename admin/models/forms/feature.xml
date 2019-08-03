@@ -1,0 +1,460 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form
+	addrulepath="/administrator/components/com_realestatenow/models/rules"
+	addfieldpath="/administrator/components/com_realestatenow/models/fields"
+>
+	<fieldset name="details">
+                <!-- [Fields 736] Default Fields.-->
+                <!-- [Fields 737] Id Field. Type: Text (joomla)-->
+                <field name="id"
+                       type="text"
+                       class="readonly"
+                       readonly="true"
+                       label="JGLOBAL_FIELD_ID_LABEL"
+                       description="JGLOBAL_FIELD_ID_DESC"
+                       size="10"
+                       default="0" />
+                <!-- [Fields 769] Date Created Field. Type: Calendar (joomla)-->
+                <field name="created"
+                       type="calendar"
+                       label="COM_REALESTATENOW_FEATURE_CREATED_DATE_LABEL"
+                       description="COM_REALESTATENOW_FEATURE_CREATED_DATE_DESC"
+                       size="22"
+                       format="%Y-%m-%d %H:%M:%S"
+                       filter="user_utc" />
+                <!-- [Fields 785] User Created Field. Type: User (joomla)-->
+                <field name="created_by"
+                       type="user"
+                       label="COM_REALESTATENOW_FEATURE_CREATED_BY_LABEL"
+                       description="COM_REALESTATENOW_FEATURE_CREATED_BY_DESC" />
+                <!-- [Fields 800] Published Field. Type: List (joomla)-->
+                <field name="published"
+                       type="list"
+                       label="JSTATUS">
+                        <option value="1">JPUBLISHED</option>
+                        <option value="0">JUNPUBLISHED</option>
+                        <option value="2">JARCHIVED</option>
+                        <option value="-2">JTRASHED</option>
+                </field>
+                <!-- [Fields 826] Date Modified Field. Type: Calendar (joomla)-->
+                <field name="modified"
+                       type="calendar"
+                       class="readonly"
+                       label="COM_REALESTATENOW_FEATURE_MODIFIED_DATE_LABEL"
+                       description="COM_REALESTATENOW_FEATURE_MODIFIED_DATE_DESC"
+                       size="22"
+                       readonly="true"
+                       format="%Y-%m-%d %H:%M:%S"
+                       filter="user_utc" />
+                <!-- [Fields 844] User Modified Field. Type: User (joomla)-->
+                <field name="modified_by"
+                       type="user"
+                       label="COM_REALESTATENOW_FEATURE_MODIFIED_BY_LABEL"
+                       description="COM_REALESTATENOW_FEATURE_MODIFIED_BY_DESC"
+                       class="readonly"
+                       readonly="true"
+                       filter="unset" />
+                <!-- [Fields 862] Access Field. Type: Accesslevel (joomla)-->
+                <field name="access"
+                       type="accesslevel"
+                       label="JFIELD_ACCESS_LABEL"
+                       description="JFIELD_ACCESS_DESC"
+                       default="1"
+                       required="false" />
+                <!-- [Fields 882] Ordering Field. Type: Numbers (joomla)-->
+                <field name="ordering"
+                       type="number"
+                       class="inputbox validate-ordering"
+                       label="COM_REALESTATENOW_FEATURE_ORDERING_LABEL"
+                       description=""
+                       default="0"
+                       size="6"
+                       required="false" />
+                <!-- [Fields 901] Version Field. Type: Text (joomla)-->
+                <field name="version"
+                       type="text"
+                       class="readonly"
+                       label="COM_REALESTATENOW_FEATURE_VERSION_LABEL"
+                       description="COM_REALESTATENOW_FEATURE_VERSION_DESC"
+                       size="6"
+                       readonly="true"
+                       filter="unset" />
+                <!-- [Fields 919] Metakey Field. Type: Textarea (joomla)-->
+                <field name="metakey"
+                       type="textarea"
+                       label="JFIELD_META_KEYWORDS_LABEL"
+                       description="JFIELD_META_KEYWORDS_DESC"
+                       rows="3"
+                       cols="30" />
+                <!-- [Fields 928] Metadesc Field. Type: Textarea (joomla)-->
+                <field name="metadesc"
+                       type="textarea"
+                       label="JFIELD_META_DESCRIPTION_LABEL"
+                       description="JFIELD_META_DESCRIPTION_DESC"
+                       rows="3"
+                       cols="30" />
+                <!-- [Fields 937] Dynamic Fields.-->
+                <!-- [Fields 1897] Propid Field. Type: Properties. (custom)-->
+                <field type="properties"
+                       name="propid"
+                       label="COM_REALESTATENOW_FEATURE_PROPID_LABEL"
+                       description="COM_REALESTATENOW_FEATURE_PROPID_DESCRIPTION"
+                       class="list_class"
+                       multiple="false"
+                       default="0"
+                       required="true"
+                       readonly="true"
+                       button="false" />
+                <!-- [Fields 1897] Sewer Field. Type: Sewer. (custom)-->
+                <field type="sewer"
+                       name="sewer"
+                       label="COM_REALESTATENOW_FEATURE_SEWER_LABEL"
+                       class="list_class"
+                       multiple="true"
+                       default=""
+                       button="true" />
+                <!-- [Fields 1897] Zoning Field. Type: Zoning. (custom)-->
+                <field type="zoning"
+                       name="zoning"
+                       label="COM_REALESTATENOW_FEATURE_ZONING_LABEL"
+                       class="list_class"
+                       multiple="true"
+                       default=""
+                       button="true" />
+                <!-- [Fields 1897] Porchpatio Field. Type: Porchpatio. (custom)-->
+                <field type="porchpatio"
+                       name="porchpatio"
+                       label="COM_REALESTATENOW_FEATURE_PORCHPATIO_LABEL"
+                       class="list_class"
+                       multiple="true"
+                       default=""
+                       button="true" />
+                <!-- [Fields 1897] Waterresources Field. Type: Waterresources. (custom)-->
+                <field type="waterresources"
+                       name="waterresources"
+                       label="COM_REALESTATENOW_FEATURE_WATERRESOURCES_LABEL"
+                       class="list_class"
+                       multiple="true"
+                       default=""
+                       button="true" />
+                <!-- [Fields 1788] Outdoorfeatures Field. Type: Subform. (joomla)-->
+                <field type="subform"
+                       name="outdoorfeatures"
+                       label="COM_REALESTATENOW_FEATURE_OUTDOORFEATURES_LABEL"
+                       layout="joomla.form.field.subform.repeatable-table"
+                       multiple="true"
+                       default=""
+                       icon="list">
+                        <form hidden="true"
+                              name="list_outdoorfeatures_modal"
+                              repeat="true">
+                                <!-- [Fields 1657] Outdoorfeattype Field. Type: Text. (joomla)-->
+                                <field type="text"
+                                       name="outdoorfeattype"
+                                       label="COM_REALESTATENOW_FEATURE_OUTDOORFEATTYPE_LABEL"
+                                       size="10"
+                                       maxlength="50"
+                                       default=""
+                                       class="text_area"
+                                       readonly="false"
+                                       disabled="false"
+                                       required="false"
+                                       filter="STRING"
+                                       message="COM_REALESTATENOW_FEATURE_OUTDOORFEATTYPE_MESSAGE"
+                                       hint="COM_REALESTATENOW_FEATURE_OUTDOORFEATTYPE_HINT" />
+                        </form>
+                </field>
+                <!-- [Fields 1788] Otherfeatures Field. Type: Subform. (joomla)-->
+                <field type="subform"
+                       name="otherfeatures"
+                       label="COM_REALESTATENOW_FEATURE_OTHERFEATURES_LABEL"
+                       layout="joomla.form.field.subform.repeatable-table"
+                       multiple="true"
+                       default=""
+                       icon="list">
+                        <form hidden="true"
+                              name="list_otherfeatures_modal"
+                              repeat="true">
+                                <!-- [Fields 1657] Otherfeattype Field. Type: Text. (joomla)-->
+                                <field type="text"
+                                       name="otherfeattype"
+                                       label="COM_REALESTATENOW_FEATURE_OTHERFEATTYPE_LABEL"
+                                       size="10"
+                                       maxlength="50"
+                                       default=""
+                                       class="text_area"
+                                       readonly="false"
+                                       disabled="false"
+                                       required="false"
+                                       filter="STRING"
+                                       message="COM_REALESTATENOW_FEATURE_OTHERFEATTYPE_MESSAGE"
+                                       hint="COM_REALESTATENOW_FEATURE_OTHERFEATTYPE_HINT" />
+                        </form>
+                </field>
+                <!-- [Fields 1897] Basementandfoundation Field. Type: Basement. (custom)-->
+                <field type="basement"
+                       name="basementandfoundation"
+                       label="COM_REALESTATENOW_FEATURE_BASEMENTANDFOUNDATION_LABEL"
+                       class="list_class"
+                       multiple="true"
+                       default=""
+                       button="true" />
+                <!-- [Fields 1897] Roof Field. Type: Roof. (custom)-->
+                <field type="roof"
+                       name="roof"
+                       label="COM_REALESTATENOW_FEATURE_ROOF_LABEL"
+                       class="list_class"
+                       multiple="true"
+                       default=""
+                       button="true" />
+                <!-- [Fields 1577] Parkingspaceyn Field. Type: Radio. (joomla)-->
+                <field type="radio"
+                       name="parkingspaceyn"
+                       label="COM_REALESTATENOW_FEATURE_PARKINGSPACEYN_LABEL"
+                       class="btn-group btn-group-yesno"
+                       default="0">
+                        <!-- [Fields 1587] Option Set.-->
+                        <option value="1">COM_REALESTATENOW_FEATURE_YES</option>
+                        <option value="0">COM_REALESTATENOW_FEATURE_NO</option>
+                </field>
+                <!-- [Fields 1657] Parkingspaces Field. Type: Text. (joomla)-->
+                <field type="text"
+                       name="parkingspaces"
+                       label="COM_REALESTATENOW_FEATURE_PARKINGSPACES_LABEL"
+                       size="3"
+                       maxlength="50"
+                       default=""
+                       class="text_area"
+                       readonly="false"
+                       disabled="false"
+                       required="false"
+                       filter="STRING"
+                       message="COM_REALESTATENOW_FEATURE_PARKINGSPACES_MESSAGE"
+                       hint="COM_REALESTATENOW_FEATURE_PARKINGSPACES_HINT" />
+                <!-- [Fields 1657] Parkingdesc Field. Type: Text. (joomla)-->
+                <field type="text"
+                       name="parkingdesc"
+                       label="COM_REALESTATENOW_FEATURE_PARKINGDESC_LABEL"
+                       size="10"
+                       maxlength="50"
+                       default=""
+                       class="text_area"
+                       readonly="false"
+                       disabled="false"
+                       required="false"
+                       filter="STRING"
+                       message="COM_REALESTATENOW_FEATURE_PARKINGDESC_MESSAGE"
+                       hint="COM_REALESTATENOW_FEATURE_PARKINGDESC_HINT" />
+                <!-- [Fields 1897] Garagetype Field. Type: Garagetype. (custom)-->
+                <field type="garagetype"
+                       name="garagetype"
+                       label="COM_REALESTATENOW_FEATURE_GARAGETYPE_LABEL"
+                       class="list_class"
+                       multiple="true"
+                       default=""
+                       button="true" />
+                <!-- [Fields 1897] Frontage Field. Type: Frontage. (custom)-->
+                <field type="frontage"
+                       name="frontage"
+                       label="COM_REALESTATENOW_FEATURE_FRONTAGE_LABEL"
+                       class="list_class"
+                       multiple="true"
+                       default=""
+                       button="true" />
+                <!-- [Fields 1788] Appliances Field. Type: Subform. (joomla)-->
+                <field type="subform"
+                       name="appliances"
+                       label="COM_REALESTATENOW_FEATURE_APPLIANCES_LABEL"
+                       layout="joomla.form.field.subform.repeatable-table"
+                       multiple="true"
+                       default=""
+                       icon="list">
+                        <form hidden="true"
+                              name="list_appliances_modal"
+                              repeat="true">
+                                <!-- [Fields 1657] Appliance_type Field. Type: Text. (joomla)-->
+                                <field type="text"
+                                       name="appliance_type"
+                                       label="COM_REALESTATENOW_FEATURE_APPLIANCE_TYPE_LABEL"
+                                       size="10"
+                                       maxlength="50"
+                                       default=""
+                                       class="text_area"
+                                       readonly="false"
+                                       disabled="false"
+                                       required="false"
+                                       filter="STRING"
+                                       message="COM_REALESTATENOW_FEATURE_APPLIANCE_TYPE_MESSAGE"
+                                       hint="COM_REALESTATENOW_FEATURE_APPLIANCE_TYPE_HINT" />
+                        </form>
+                </field>
+                <!-- [Fields 1897] Heating Field. Type: Heating. (custom)-->
+                <field type="heating"
+                       name="heating"
+                       label="COM_REALESTATENOW_FEATURE_HEATING_LABEL"
+                       class="list_class"
+                       multiple="true"
+                       default=""
+                       button="true" />
+                <!-- [Fields 1788] Indoorfeatures Field. Type: Subform. (joomla)-->
+                <field type="subform"
+                       name="indoorfeatures"
+                       label="COM_REALESTATENOW_FEATURE_INDOORFEATURES_LABEL"
+                       layout="joomla.form.field.subform.repeatable-table"
+                       multiple="true"
+                       default=""
+                       icon="list">
+                        <form hidden="true"
+                              name="list_indoorfeatures_modal"
+                              repeat="true">
+                                <!-- [Fields 1657] Indoorfeattype Field. Type: Text. (joomla)-->
+                                <field type="text"
+                                       name="indoorfeattype"
+                                       label="COM_REALESTATENOW_FEATURE_INDOORFEATTYPE_LABEL"
+                                       size="10"
+                                       maxlength="50"
+                                       default=""
+                                       class="text_area"
+                                       readonly="false"
+                                       disabled="false"
+                                       required="false"
+                                       filter="STRING"
+                                       message="COM_REALESTATENOW_FEATURE_INDOORFEATTYPE_MESSAGE"
+                                       hint="COM_REALESTATENOW_FEATURE_INDOORFEATTYPE_HINT" />
+                        </form>
+                </field>
+                <!-- [Fields 1897] Cooling Field. Type: Cooling. (custom)-->
+                <field type="cooling"
+                       name="cooling"
+                       label="COM_REALESTATENOW_FEATURE_COOLING_LABEL"
+                       class="list_class"
+                       multiple="true"
+                       default=""
+                       button="true" />
+                <!-- [Fields 1788] Communityfeatures Field. Type: Subform. (joomla)-->
+                <field type="subform"
+                       name="communityfeatures"
+                       label="COM_REALESTATENOW_FEATURE_COMMUNITYFEATURES_LABEL"
+                       layout="joomla.form.field.subform.repeatable-table"
+                       multiple="true"
+                       default=""
+                       icon="list">
+                        <form hidden="true"
+                              name="list_communityfeatures_modal"
+                              repeat="true">
+                                <!-- [Fields 1657] Commfeattype Field. Type: Text. (joomla)-->
+                                <field type="text"
+                                       name="commfeattype"
+                                       label="COM_REALESTATENOW_FEATURE_COMMFEATTYPE_LABEL"
+                                       size="10"
+                                       maxlength="50"
+                                       default=""
+                                       class="text_area"
+                                       readonly="false"
+                                       disabled="false"
+                                       required="false"
+                                       filter="STRING"
+                                       message="COM_REALESTATENOW_FEATURE_COMMFEATTYPE_MESSAGE"
+                                       hint="COM_REALESTATENOW_FEATURE_COMMFEATTYPE_HINT" />
+                        </form>
+                </field>
+                <!-- [Fields 1897] Fencing Field. Type: Fencing. (custom)-->
+                <field type="fencing"
+                       name="fencing"
+                       label="COM_REALESTATENOW_FEATURE_FENCING_LABEL"
+                       class="list_class"
+                       multiple="true"
+                       default=""
+                       button="true" />
+                <!-- [Fields 1788] Buildingfeatures Field. Type: Subform. (joomla)-->
+                <field type="subform"
+                       name="buildingfeatures"
+                       label="COM_REALESTATENOW_FEATURE_BUILDINGFEATURES_LABEL"
+                       layout="joomla.form.field.subform.repeatable-table"
+                       multiple="true"
+                       default=""
+                       icon="list">
+                        <form hidden="true"
+                              name="list_buildingfeatures_modal"
+                              repeat="true">
+                                <!-- [Fields 1657] Bldgfeattype Field. Type: Text. (joomla)-->
+                                <field type="text"
+                                       name="bldgfeattype"
+                                       label="COM_REALESTATENOW_FEATURE_BLDGFEATTYPE_LABEL"
+                                       size="10"
+                                       maxlength="50"
+                                       default=""
+                                       class="text_area"
+                                       readonly="false"
+                                       disabled="false"
+                                       required="false"
+                                       filter="STRING"
+                                       message="COM_REALESTATENOW_FEATURE_BLDGFEATTYPE_MESSAGE"
+                                       hint="COM_REALESTATENOW_FEATURE_BLDGFEATTYPE_HINT" />
+                        </form>
+                </field>
+                <!-- [Fields 1897] Exteriorfinish Field. Type: Exteriorfinish. (custom)-->
+                <field type="exteriorfinish"
+                       name="exteriorfinish"
+                       label="COM_REALESTATENOW_FEATURE_EXTERIORFINISH_LABEL"
+                       class="list_class"
+                       multiple="true"
+                       default=""
+                       button="true" />
+                <!-- [Fields 946] Metadata Fields-->
+                <fields name="metadata"
+                        label="JGLOBAL_FIELDSET_METADATA_OPTIONS">
+                        <fieldset name="vdmmetadata"
+                                  label="JGLOBAL_FIELDSET_METADATA_OPTIONS">
+                                <!-- [Fields 954] Robots Field. Type: List (joomla)-->
+                                <field name="robots"
+                                       type="list"
+                                       label="JFIELD_METADATA_ROBOTS_LABEL"
+                                       description="JFIELD_METADATA_ROBOTS_DESC">
+                                        <option value="">JGLOBAL_USE_GLOBAL</option>
+                                        <option value="index, follow">JGLOBAL_INDEX_FOLLOW</option>
+                                        <option value="noindex, follow">JGLOBAL_NOINDEX_FOLLOW</option>
+                                        <option value="index, nofollow">JGLOBAL_INDEX_NOFOLLOW</option>
+                                        <option value="noindex, nofollow">JGLOBAL_NOINDEX_NOFOLLOW</option>
+                                </field>
+                                <!-- [Fields 979] Author Field. Type: Text (joomla)-->
+                                <field name="author"
+                                       type="text"
+                                       label="JAUTHOR"
+                                       description="JFIELD_METADATA_AUTHOR_DESC"
+                                       size="20" />
+                                <!-- [Fields 992] Rights Field. Type: Textarea (joomla)-->
+                                <field name="rights"
+                                       type="textarea"
+                                       label="JFIELD_META_RIGHTS_LABEL"
+                                       description="JFIELD_META_RIGHTS_DESC"
+                                       required="false"
+                                       filter="string"
+                                       cols="30"
+                                       rows="2" />
+                        </fieldset>
+                </fields>
+        </fieldset>
+	
+	<!-- [Interpretation 11689] Access Control Fields. -->
+	<fieldset name="accesscontrol">
+		<!-- [Interpretation 11691] Asset Id Field. Type: Hidden (joomla) -->
+		<field
+			name="asset_id"
+			type="hidden"
+			filter="unset"
+		/>
+		<!-- [Interpretation 11697] Rules Field. Type: Rules (joomla) -->
+		<field
+			name="rules"
+			type="rules"
+			label="Permissions in relation to this feature"
+			translate_label="false"
+			filter="rules"
+			validate="rules"
+			class="inputbox"
+			component="com_realestatenow"
+			section="feature"
+		/>
+	</fieldset>
+</form>

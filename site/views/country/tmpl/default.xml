@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<metadata>
+	<layout title="COM_REALESTATENOW_MENU_COUNTRY_TITLE" option="COM_REALESTATENOW_MENU_COUNTRY_OPTION">
+		<message>
+			<![CDATA[COM_REALESTATENOW_MENU_COUNTRY_DESC]]>
+		</message>
+	</layout>
+	<!-- [Interpretation 1496] Add fields to the request variables for the layout. -->
+	<fields name="request">
+		<fieldset name="request"
+			addrulepath="/administrator/components/com_realestatenow/models/rules"
+			addfieldpath="/administrator/components/com_realestatenow/models/fields">
+			
+	<!--  [Fields 1897] Country_request_id Field. Type: Countries. (custom) -->
+	<field type="countries"
+               name="id"
+               label="COM_REALESTATENOW_CONFIG_COUNTRY_REQUEST_ID_LABEL"
+               description="COM_REALESTATENOW_CONFIG_COUNTRY_REQUEST_ID_DESCRIPTION"
+               class="list_class"
+               multiple="false"
+               default="0"
+               required="true"
+               button="false" />
+		</fieldset>
+	</fields>
+	<!-- [Interpretation 1525] Adding page parameters -->
+	<fields name="params">
+		<fieldset name="basic" label="COM_REALESTATENOW"
+			addrulepath="/administrator/components/com_realestatenow/models/rules"
+			addfieldpath="/administrator/components/com_realestatenow/models/fields">
+	<!--  [Fields 1577] Country_properties_display Field. Type: Radio. (joomla) -->
+	<field type="radio"
+               name="country_properties_display"
+               label="COM_REALESTATENOW_CONFIG_COUNTRY_PROPERTIES_DISPLAY_LABEL"
+               description="COM_REALESTATENOW_CONFIG_COUNTRY_PROPERTIES_DISPLAY_DESCRIPTION"
+               class="btn-group btn-group-yesno"
+               default="1">
+                <!-- [Fields 1587] Option Set.-->
+                <option value="1">COM_REALESTATENOW_CONFIG_GRID</option>
+                <option value="2">COM_REALESTATENOW_CONFIG_TAB</option>
+                <option value="3">COM_REALESTATENOW_CONFIG_ACCORDION</option>
+        </field>			
+	<!--  [Fields 1657] Country_map_zoom Field. Type: Text. (joomla) -->
+	<field type="text"
+               name="country_map_zoom"
+               label="COM_REALESTATENOW_CONFIG_COUNTRY_MAP_ZOOM_LABEL"
+               size="10"
+               maxlength="50"
+               default="15"
+               description="COM_REALESTATENOW_CONFIG_COUNTRY_MAP_ZOOM_DESCRIPTION"
+               class="text_area"
+               readonly="false"
+               disabled="false"
+               required="false"
+               filter="STRING"
+               message="COM_REALESTATENOW_CONFIG_COUNTRY_MAP_ZOOM_MESSAGE" />			
+	<!--  [Fields 1577] Show_country_image Field. Type: Radio. (joomla) -->
+	<field type="radio"
+               name="show_country_image"
+               label="COM_REALESTATENOW_CONFIG_SHOW_COUNTRY_IMAGE_LABEL"
+               description="COM_REALESTATENOW_CONFIG_SHOW_COUNTRY_IMAGE_DESCRIPTION"
+               class="btn-group btn-group-yesno"
+               default="1">
+                <!-- [Fields 1587] Option Set.-->
+                <option value="1">COM_REALESTATENOW_CONFIG_YES</option>
+                <option value="0">COM_REALESTATENOW_CONFIG_NO</option>
+        </field>			
+	<!--  [Fields 1577] Country_thumb_type Field. Type: Radio. (joomla) -->
+	<field type="radio"
+               name="country_thumb_type"
+               label="COM_REALESTATENOW_CONFIG_COUNTRY_THUMB_TYPE_LABEL"
+               class="btn-group btn-group-yesno"
+               default="0">
+                <!-- [Fields 1587] Option Set.-->
+                <option value="1">COM_REALESTATENOW_CONFIG_CAROUSEL</option>
+                <option value="0">COM_REALESTATENOW_CONFIG_STATIC</option>
+        </field>			
+	<!--  [Fields 1577] Ctryshowfilter Field. Type: Radio. (joomla) -->
+	<field type="radio"
+               name="ctryshowfilter"
+               label="COM_REALESTATENOW_CONFIG_CTRYSHOWFILTER_LABEL"
+               class="btn-group btn-group-yesno"
+               default="1">
+                <!-- [Fields 1587] Option Set.-->
+                <option value="1">COM_REALESTATENOW_CONFIG_YES</option>
+                <option value="0">COM_REALESTATENOW_CONFIG_NO</option>
+        </field>			
+	<!--  [Fields 1671] Filters_note_six Field. Type: Note. A None Database Field. (joomla) -->
+	<field type="note"
+               name="filters_note_six"
+               label="COM_REALESTATENOW_CONFIG_FILTERS_NOTE_SIX_LABEL"
+               description="COM_REALESTATENOW_CONFIG_FILTERS_NOTE_SIX_DESCRIPTION"
+               heading="h4"
+               class="alert filters_note_six"
+               close="false" />			
+	<!--  [Fields 1577] Ctrykeyword_filter Field. Type: Radio. (joomla) -->
+	<field type="radio"
+               name="ctrykeyword_filter"
+               label="COM_REALESTATENOW_CONFIG_CTRYKEYWORD_FILTER_LABEL"
+               description="COM_REALESTATENOW_CONFIG_CTRYKEYWORD_FILTER_DESCRIPTION"
+               class="btn-group btn-group-yesno"
+               default="1">
+                <!-- [Fields 1587] Option Set.-->
+                <option value="1">COM_REALESTATENOW_CONFIG_YES</option>
+                <option value="0">COM_REALESTATENOW_CONFIG_NO</option>
+        </field>			
+	<!--  [Fields 1577] Ctrycategory_filter Field. Type: Radio. (joomla) -->
+	<field type="radio"
+               name="ctrycategory_filter"
+               label="COM_REALESTATENOW_CONFIG_CTRYCATEGORY_FILTER_LABEL"
+               description="COM_REALESTATENOW_CONFIG_CTRYCATEGORY_FILTER_DESCRIPTION"
+               class="btn-group btn-group-yesno"
+               default="1">
+                <!-- [Fields 1587] Option Set.-->
+                <option value="1">COM_REALESTATENOW_CONFIG_YES</option>
+                <option value="0">COM_REALESTATENOW_CONFIG_NO</option>
+        </field>			
+	<!--  [Fields 1577] Ctrytranstype_filter Field. Type: Radio. (joomla) -->
+	<field type="radio"
+               name="ctrytranstype_filter"
+               label="COM_REALESTATENOW_CONFIG_CTRYTRANSTYPE_FILTER_LABEL"
+               description="COM_REALESTATENOW_CONFIG_CTRYTRANSTYPE_FILTER_DESCRIPTION"
+               class="btn-group btn-group-yesno"
+               default="1">
+                <!-- [Fields 1587] Option Set.-->
+                <option value="1">COM_REALESTATENOW_CONFIG_YES</option>
+                <option value="0">COM_REALESTATENOW_CONFIG_NO</option>
+        </field>			
+	<!--  [Fields 1577] Ctrymktstatus_filter Field. Type: Radio. (joomla) -->
+	<field type="radio"
+               name="ctrymktstatus_filter"
+               label="COM_REALESTATENOW_CONFIG_CTRYMKTSTATUS_FILTER_LABEL"
+               description="COM_REALESTATENOW_CONFIG_CTRYMKTSTATUS_FILTER_DESCRIPTION"
+               class="btn-group btn-group-yesno"
+               default="1">
+                <!-- [Fields 1587] Option Set.-->
+                <option value="1">COM_REALESTATENOW_CONFIG_YES</option>
+                <option value="0">COM_REALESTATENOW_CONFIG_NO</option>
+        </field>			
+	<!--  [Fields 1577] Ctryagent_filter Field. Type: Radio. (joomla) -->
+	<field type="radio"
+               name="ctryagent_filter"
+               label="COM_REALESTATENOW_CONFIG_CTRYAGENT_FILTER_LABEL"
+               description="COM_REALESTATENOW_CONFIG_CTRYAGENT_FILTER_DESCRIPTION"
+               class="btn-group btn-group-yesno"
+               default="1">
+                <!-- [Fields 1587] Option Set.-->
+                <option value="1">COM_REALESTATENOW_CONFIG_YES</option>
+                <option value="0">COM_REALESTATENOW_CONFIG_NO</option>
+        </field>			
+	<!--  [Fields 1577] Ctrystate_filter Field. Type: Radio. (joomla) -->
+	<field type="radio"
+               name="ctrystate_filter"
+               label="COM_REALESTATENOW_CONFIG_CTRYSTATE_FILTER_LABEL"
+               description="COM_REALESTATENOW_CONFIG_CTRYSTATE_FILTER_DESCRIPTION"
+               class="btn-group btn-group-yesno"
+               default="1">
+                <!-- [Fields 1587] Option Set.-->
+                <option value="1">COM_REALESTATENOW_CONFIG_YES</option>
+                <option value="0">COM_REALESTATENOW_CONFIG_NO</option>
+        </field>			
+	<!--  [Fields 1577] Ctrycity_filter Field. Type: Radio. (joomla) -->
+	<field type="radio"
+               name="ctrycity_filter"
+               label="COM_REALESTATENOW_CONFIG_CTRYCITY_FILTER_LABEL"
+               description="COM_REALESTATENOW_CONFIG_CTRYCITY_FILTER_DESCRIPTION"
+               class="btn-group btn-group-yesno"
+               default="1">
+                <!-- [Fields 1587] Option Set.-->
+                <option value="1">COM_REALESTATENOW_CONFIG_YES</option>
+                <option value="0">COM_REALESTATENOW_CONFIG_NO</option>
+        </field>			
+	<!--  [Fields 1577] Ctrybeds_filter Field. Type: Radio. (joomla) -->
+	<field type="radio"
+               name="ctrybeds_filter"
+               label="COM_REALESTATENOW_CONFIG_CTRYBEDS_FILTER_LABEL"
+               description="COM_REALESTATENOW_CONFIG_CTRYBEDS_FILTER_DESCRIPTION"
+               class="btn-group btn-group-yesno"
+               default="1">
+                <!-- [Fields 1587] Option Set.-->
+                <option value="1">COM_REALESTATENOW_CONFIG_YES</option>
+                <option value="0">COM_REALESTATENOW_CONFIG_NO</option>
+        </field>			
+	<!--  [Fields 1577] Ctrybaths_filter Field. Type: Radio. (joomla) -->
+	<field type="radio"
+               name="ctrybaths_filter"
+               label="COM_REALESTATENOW_CONFIG_CTRYBATHS_FILTER_LABEL"
+               description="COM_REALESTATENOW_CONFIG_CTRYBATHS_FILTER_DESCRIPTION"
+               class="btn-group btn-group-yesno"
+               default="1">
+                <!-- [Fields 1587] Option Set.-->
+                <option value="1">COM_REALESTATENOW_CONFIG_YES</option>
+                <option value="0">COM_REALESTATENOW_CONFIG_NO</option>
+        </field>			
+	<!--  [Fields 1577] Ctryarea_filter Field. Type: Radio. (joomla) -->
+	<field type="radio"
+               name="ctryarea_filter"
+               label="COM_REALESTATENOW_CONFIG_CTRYAREA_FILTER_LABEL"
+               description="COM_REALESTATENOW_CONFIG_CTRYAREA_FILTER_DESCRIPTION"
+               class="btn-group btn-group-yesno"
+               default="1">
+                <!-- [Fields 1587] Option Set.-->
+                <option value="1">COM_REALESTATENOW_CONFIG_YES</option>
+                <option value="0">COM_REALESTATENOW_CONFIG_NO</option>
+        </field>			
+	<!--  [Fields 1577] Ctryprice_filter Field. Type: Radio. (joomla) -->
+	<field type="radio"
+               name="ctryprice_filter"
+               label="COM_REALESTATENOW_CONFIG_CTRYPRICE_FILTER_LABEL"
+               description="COM_REALESTATENOW_CONFIG_CTRYPRICE_FILTER_DESCRIPTION"
+               class="btn-group btn-group-yesno"
+               default="1">
+                <!-- [Fields 1587] Option Set.-->
+                <option value="1">COM_REALESTATENOW_CONFIG_YES</option>
+                <option value="0">COM_REALESTATENOW_CONFIG_NO</option>
+        </field>			
+	<!--  [Fields 1577] Ctryland_filter Field. Type: Radio. (joomla) -->
+	<field type="radio"
+               name="ctryland_filter"
+               label="COM_REALESTATENOW_CONFIG_CTRYLAND_FILTER_LABEL"
+               description="COM_REALESTATENOW_CONFIG_CTRYLAND_FILTER_DESCRIPTION"
+               class="btn-group btn-group-yesno"
+               default="1">
+                <!-- [Fields 1587] Option Set.-->
+                <option value="1">COM_REALESTATENOW_CONFIG_YES</option>
+                <option value="0">COM_REALESTATENOW_CONFIG_NO</option>
+        </field>			
+	<!--  [Fields 1577] Ctrywaterfront_filter Field. Type: Radio. (joomla) -->
+	<field type="radio"
+               name="ctrywaterfront_filter"
+               label="COM_REALESTATENOW_CONFIG_CTRYWATERFRONT_FILTER_LABEL"
+               description="COM_REALESTATENOW_CONFIG_CTRYWATERFRONT_FILTER_DESCRIPTION"
+               class="btn-group btn-group-yesno"
+               default="1">
+                <!-- [Fields 1587] Option Set.-->
+                <option value="1">COM_REALESTATENOW_CONFIG_YES</option>
+                <option value="0">COM_REALESTATENOW_CONFIG_NO</option>
+        </field>
+		</fieldset>
+	</fields>
+</metadata>

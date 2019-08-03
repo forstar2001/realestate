@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<metadata>
+	<layout title="COM_REALESTATENOW_MENU_HOTSHEET_TITLE" option="COM_REALESTATENOW_MENU_HOTSHEET_OPTION">
+		<message>
+			<![CDATA[COM_REALESTATENOW_MENU_HOTSHEET_DESC]]>
+		</message>
+        <fields name="request">
+            <fieldset name="request"
+                      addrulepath="/administrator/components/com_realestatenow/models/rules"
+                      addfieldpath="/administrator/components/com_realestatenow/models/fields">
+
+                <field  type="hidden"
+                        name="task"
+                        default="hotsheet.display" />
+            </fieldset>
+        </fields>
+	</layout>
+</metadata>

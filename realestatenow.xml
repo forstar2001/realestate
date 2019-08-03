@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="3.2" method="upgrade">
+	<name>COM_REALESTATENOW</name>
+	<creationDate>29th October, 2018</creationDate>
+	<author>Most Wanted Web Services, Inc.</author>
+	<authorEmail>sales@mwweb.host</authorEmail>
+	<authorUrl>https://mostwantedrealestatesites.com</authorUrl>
+	<copyright>Copyright (C) 2015-2018. All Rights Reserved</copyright>
+	<license>GNU/GPL Version 2 or later - http://www.gnu.org/licenses/gpl-2.0.html</license>
+	<version>3.1.18</version>
+	<description><![CDATA[
+		<h1>Real Estate NOW! (v.3.1.18)</h1>
+		<div style="clear: both;"></div>
+		<p>Simple yet beautiful.  Our Real Estate component is multi-functional and will work with RETS or as a stand-alone.  The user-friendly interface allows for multi-choice features, multiple image galleries, drag and drop image uploads, open houses, featured listings, a watchlist for favorites, multiple categories, agencies, and so much more.  And of course it’s designed for Joomla! only and is responsive.  Choose from Bing or Google maps.  The front-end management makes it easy for agents to add and update their profiles and their listings easily and efficiently.</p>
+		<p>Created by <a href="https://mostwantedrealestatesites.com" target="_blank">Most Wanted Web Services, Inc.</a><br /><small>Development started 1st May, 2016</small></p>
+	]]></description>
+
+	<!-- Runs on install; New in Joomla 1.5 -->
+	<install>
+		<sql>
+			<file driver="mysql" charset="utf8">sql/install.mysql.utf8.sql</file>
+		</sql>
+	</install>
+
+	<!-- Runs on uninstall; New in Joomla 1.5 -->
+	<uninstall>
+		<sql>
+			<file driver="mysql" charset="utf8">sql/uninstall.mysql.utf8.sql</file>
+		</sql>
+	</uninstall>
+
+	<!-- Runs on install/uninstall/update; New in Joomla 2.5 -->
+	<scriptfile>script.php</scriptfile>
+
+	<media destination="com_realestatenow" folder="media">
+		<filename>index.html</filename>
+		<folder>js</folder>
+		<folder>css</folder>
+		<folder>images</folder>
+		<folder>uikit-v3</folder>
+		<folder>pictures</folder>
+		<folder>realestatenow</folder>
+		<folder>uikit-v2</folder>
+		<folder>footable-v2</folder>
+	</media>
+
+	<!-- Update Schema; New in Joomla 2.5 -->
+	<update>
+		<schemas>
+			<schemapath type="mysql">sql/updates/mysql/</schemapath>
+		</schemas>
+	</update>
+
+	<files folder="site">
+		<filename>controller.php</filename>
+		<filename>index.html</filename>
+		<filename>router.php</filename>
+		<filename>realestatenow.php</filename>
+		<filename>realestatenow.php</filename>
+		<filename>router.php</filename>
+		<filename>controller.php</filename>
+		<folder>assets</folder>
+		<folder>helpers</folder>
+		<folder>controllers</folder>
+		<folder>models</folder>
+		<folder>views</folder>
+		<folder>layouts</folder>
+	</files>
+
+	<languages folder="site">
+		<language tag="en-GB">language/en-GB/en-GB.com_realestatenow.ini</language>
+		<language tag="en-GB">language/en-GB/en-GB.com_realestatenow.sys.ini</language>
+		<language tag="af-ZA">language/af-ZA/af-ZA.com_realestatenow.ini</language>
+	</languages>
+
+	<administration>
+		<menu>COM_REALESTATENOW_MENU</menu>
+		<submenu>
+			<!-- Instead of link you can specify individual link attributes -->
+			<menu option="com_realestatenow" view="countries">COM_REALESTATENOW_MENU_COUNTRIES</menu>
+			<menu option="com_realestatenow" view="states">COM_REALESTATENOW_MENU_STATES</menu>
+			<menu option="com_realestatenow" view="cities">COM_REALESTATENOW_MENU_CITIES</menu>
+			<menu option="com_realestatenow" view="agencies">COM_REALESTATENOW_MENU_AGENCIES</menu>
+			<menu option="com_realestatenow" view="agents">COM_REALESTATENOW_MENU_AGENTS</menu>
+			<menu option="com_realestatenow" view="properties">COM_REALESTATENOW_MENU_PROPERTIES</menu>
+			<menu option="com_realestatenow" view="favorite_listings">COM_REALESTATENOW_MENU_FAVORITE_LISTINGS</menu>
+		</submenu>
+		<files folder="admin">
+			<filename>access.xml</filename>
+			<filename>config.xml</filename>
+			<filename>controller.php</filename>
+			<filename>whmcs.php</filename>
+			<filename>index.html</filename>
+			<filename>realestatenow.php</filename>
+			<filename>access.xml</filename>
+			<filename>config.xml</filename>
+			<filename>controller.php</filename>
+			<filename>realestatenow.php</filename>
+			<filename>README.txt</filename>
+			<filename>README.txt</filename>
+			<folder>assets</folder>
+			<folder>controllers</folder>
+			<folder>helpers</folder>
+			<folder>models</folder>
+			<folder>sql</folder>
+			<folder>tables</folder>
+			<folder>views</folder>
+			<folder>layouts</folder>
+		</files>
+
+		<languages folder="admin">
+			<language tag="en-GB">language/en-GB/en-GB.com_realestatenow.ini</language>
+			<language tag="en-GB">language/en-GB/en-GB.com_realestatenow.sys.ini</language>
+			<language tag="af-ZA">language/af-ZA/af-ZA.com_realestatenow.ini</language>
+			<language tag="ng-NA">language/ng-NA/ng-NA.com_realestatenow.ini</language>
+		</languages>
+
+	</administration>
+	<updateservers>
+		<server type="extension" enabled="1" element="com_realestatenow" name="Real Estate NOW!">https://mostwantedwebhosting.com/mwrexml/update_com_realestatenow.xml</server>
+	</updateservers>
+</extension>

@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form
+	addrulepath="/administrator/components/com_realestatenow/models/rules"
+	addfieldpath="/administrator/components/com_realestatenow/models/fields"
+>
+	<fieldset name="details">
+                <!-- [Fields 736] Default Fields.-->
+                <!-- [Fields 737] Id Field. Type: Text (joomla)-->
+                <field name="id"
+                       type="text"
+                       class="readonly"
+                       readonly="true"
+                       label="JGLOBAL_FIELD_ID_LABEL"
+                       description="JGLOBAL_FIELD_ID_DESC"
+                       size="10"
+                       default="0" />
+                <!-- [Fields 769] Date Created Field. Type: Calendar (joomla)-->
+                <field name="created"
+                       type="calendar"
+                       label="COM_REALESTATENOW_MULTIFAMILY_CREATED_DATE_LABEL"
+                       description="COM_REALESTATENOW_MULTIFAMILY_CREATED_DATE_DESC"
+                       size="22"
+                       format="%Y-%m-%d %H:%M:%S"
+                       filter="user_utc" />
+                <!-- [Fields 785] User Created Field. Type: User (joomla)-->
+                <field name="created_by"
+                       type="user"
+                       label="COM_REALESTATENOW_MULTIFAMILY_CREATED_BY_LABEL"
+                       description="COM_REALESTATENOW_MULTIFAMILY_CREATED_BY_DESC" />
+                <!-- [Fields 800] Published Field. Type: List (joomla)-->
+                <field name="published"
+                       type="list"
+                       label="JSTATUS">
+                        <option value="1">JPUBLISHED</option>
+                        <option value="0">JUNPUBLISHED</option>
+                        <option value="2">JARCHIVED</option>
+                        <option value="-2">JTRASHED</option>
+                </field>
+                <!-- [Fields 826] Date Modified Field. Type: Calendar (joomla)-->
+                <field name="modified"
+                       type="calendar"
+                       class="readonly"
+                       label="COM_REALESTATENOW_MULTIFAMILY_MODIFIED_DATE_LABEL"
+                       description="COM_REALESTATENOW_MULTIFAMILY_MODIFIED_DATE_DESC"
+                       size="22"
+                       readonly="true"
+                       format="%Y-%m-%d %H:%M:%S"
+                       filter="user_utc" />
+                <!-- [Fields 844] User Modified Field. Type: User (joomla)-->
+                <field name="modified_by"
+                       type="user"
+                       label="COM_REALESTATENOW_MULTIFAMILY_MODIFIED_BY_LABEL"
+                       description="COM_REALESTATENOW_MULTIFAMILY_MODIFIED_BY_DESC"
+                       class="readonly"
+                       readonly="true"
+                       filter="unset" />
+                <!-- [Fields 862] Access Field. Type: Accesslevel (joomla)-->
+                <field name="access"
+                       type="accesslevel"
+                       label="JFIELD_ACCESS_LABEL"
+                       description="JFIELD_ACCESS_DESC"
+                       default="1"
+                       required="false" />
+                <!-- [Fields 882] Ordering Field. Type: Numbers (joomla)-->
+                <field name="ordering"
+                       type="number"
+                       class="inputbox validate-ordering"
+                       label="COM_REALESTATENOW_MULTIFAMILY_ORDERING_LABEL"
+                       description=""
+                       default="0"
+                       size="6"
+                       required="false" />
+                <!-- [Fields 901] Version Field. Type: Text (joomla)-->
+                <field name="version"
+                       type="text"
+                       class="readonly"
+                       label="COM_REALESTATENOW_MULTIFAMILY_VERSION_LABEL"
+                       description="COM_REALESTATENOW_MULTIFAMILY_VERSION_DESC"
+                       size="6"
+                       readonly="true"
+                       filter="unset" />
+                <!-- [Fields 919] Metakey Field. Type: Textarea (joomla)-->
+                <field name="metakey"
+                       type="textarea"
+                       label="JFIELD_META_KEYWORDS_LABEL"
+                       description="JFIELD_META_KEYWORDS_DESC"
+                       rows="3"
+                       cols="30" />
+                <!-- [Fields 928] Metadesc Field. Type: Textarea (joomla)-->
+                <field name="metadesc"
+                       type="textarea"
+                       label="JFIELD_META_DESCRIPTION_LABEL"
+                       description="JFIELD_META_DESCRIPTION_DESC"
+                       rows="3"
+                       cols="30" />
+                <!-- [Fields 937] Dynamic Fields.-->
+                <!-- [Fields 1897] Propid Field. Type: Properties. (custom)-->
+                <field type="properties"
+                       name="propid"
+                       label="COM_REALESTATENOW_MULTIFAMILY_PROPID_LABEL"
+                       description="COM_REALESTATENOW_MULTIFAMILY_PROPID_DESCRIPTION"
+                       class="list_class"
+                       multiple="false"
+                       default="0"
+                       required="true"
+                       readonly="true"
+                       button="false" />
+                <!-- [Fields 1788] Unitfeatures Field. Type: Subform. (joomla)-->
+                <field type="subform"
+                       name="unitfeatures"
+                       label="COM_REALESTATENOW_MULTIFAMILY_UNITFEATURES_LABEL"
+                       layout="joomla.form.field.subform.repeatable-table"
+                       multiple="true"
+                       default=""
+                       icon="list">
+                        <form hidden="true"
+                              name="list_unitfeatures_modal"
+                              repeat="true">
+                                <!-- [Fields 1657] Unitfeattype Field. Type: Text. (joomla)-->
+                                <field type="text"
+                                       name="unitfeattype"
+                                       label="COM_REALESTATENOW_MULTIFAMILY_UNITFEATTYPE_LABEL"
+                                       size="10"
+                                       maxlength="50"
+                                       default=""
+                                       class="text_area"
+                                       readonly="false"
+                                       disabled="false"
+                                       required="false"
+                                       filter="STRING"
+                                       message="COM_REALESTATENOW_MULTIFAMILY_UNITFEATTYPE_MESSAGE"
+                                       hint="COM_REALESTATENOW_MULTIFAMILY_UNITFEATTYPE_HINT" />
+                        </form>
+                </field>
+                <!-- [Fields 1788] Commonareas Field. Type: Subform. (joomla)-->
+                <field type="subform"
+                       name="commonareas"
+                       label="COM_REALESTATENOW_MULTIFAMILY_COMMONAREAS_LABEL"
+                       layout="joomla.form.field.subform.repeatable-table"
+                       multiple="true"
+                       default=""
+                       icon="list">
+                        <form hidden="true"
+                              name="list_commonareas_modal"
+                              repeat="true">
+                                <!-- [Fields 1657] Commonareastype Field. Type: Text. (joomla)-->
+                                <field type="text"
+                                       name="commonareastype"
+                                       label="COM_REALESTATENOW_MULTIFAMILY_COMMONAREASTYPE_LABEL"
+                                       size="10"
+                                       maxlength="50"
+                                       default=""
+                                       class="text_area"
+                                       readonly="false"
+                                       disabled="false"
+                                       required="false"
+                                       filter="STRING"
+                                       message="COM_REALESTATENOW_MULTIFAMILY_COMMONAREASTYPE_MESSAGE"
+                                       hint="COM_REALESTATENOW_MULTIFAMILY_COMMONAREASTYPE_HINT" />
+                        </form>
+                </field>
+                <!-- [Fields 1788] Unitdetails Field. Type: Subform. (joomla)-->
+                <field type="subform"
+                       name="unitdetails"
+                       label="COM_REALESTATENOW_MULTIFAMILY_UNITDETAILS_LABEL"
+                       layout="joomla.form.field.subform.repeatable-table"
+                       multiple="true"
+                       default=""
+                       icon="list">
+                        <form hidden="true"
+                              name="list_unitdetails_modal"
+                              repeat="true">
+                                <!-- [Fields 1657] Unit_num Field. Type: Text. (joomla)-->
+                                <field type="text"
+                                       name="unit_num"
+                                       label="COM_REALESTATENOW_MULTIFAMILY_UNIT_NUM_LABEL"
+                                       size="10"
+                                       maxlength="50"
+                                       default=""
+                                       class="text_area"
+                                       readonly="false"
+                                       disabled="false"
+                                       required="false"
+                                       filter="STRING"
+                                       message="COM_REALESTATENOW_MULTIFAMILY_UNIT_NUM_MESSAGE"
+                                       hint="COM_REALESTATENOW_MULTIFAMILY_UNIT_NUM_HINT" />
+                                <!-- [Fields 1657] Unitsqft Field. Type: Text. (joomla)-->
+                                <field type="text"
+                                       name="unitsqft"
+                                       label="COM_REALESTATENOW_MULTIFAMILY_UNITSQFT_LABEL"
+                                       size="10"
+                                       maxlength="50"
+                                       default="Some text"
+                                       description="COM_REALESTATENOW_MULTIFAMILY_UNITSQFT_DESCRIPTION"
+                                       class="text_area"
+                                       readonly="false"
+                                       disabled="false"
+                                       required="false"
+                                       filter="STRING"
+                                       message="COM_REALESTATENOW_MULTIFAMILY_UNITSQFT_MESSAGE"
+                                       hint="COM_REALESTATENOW_MULTIFAMILY_UNITSQFT_HINT" />
+                                <!-- [Fields 1657] Unitrent Field. Type: Text. (joomla)-->
+                                <field type="text"
+                                       name="unitrent"
+                                       label="COM_REALESTATENOW_MULTIFAMILY_UNITRENT_LABEL"
+                                       size="10"
+                                       maxlength="50"
+                                       default=""
+                                       class="text_area"
+                                       readonly="false"
+                                       disabled="false"
+                                       required="false"
+                                       filter="STRING"
+                                       message="COM_REALESTATENOW_MULTIFAMILY_UNITRENT_MESSAGE"
+                                       hint="COM_REALESTATENOW_MULTIFAMILY_UNITRENT_HINT"
+                                       showon="show_price=0" />
+                                <!-- [Fields 1657] Unitbeds Field. Type: Text. (joomla)-->
+                                <field type="text"
+                                       name="unitbeds"
+                                       label="COM_REALESTATENOW_MULTIFAMILY_UNITBEDS_LABEL"
+                                       size="10"
+                                       maxlength="50"
+                                       default="Some text"
+                                       description="COM_REALESTATENOW_MULTIFAMILY_UNITBEDS_DESCRIPTION"
+                                       class="text_area"
+                                       readonly="false"
+                                       disabled="false"
+                                       required="false"
+                                       filter="STRING"
+                                       message="COM_REALESTATENOW_MULTIFAMILY_UNITBEDS_MESSAGE"
+                                       hint="COM_REALESTATENOW_MULTIFAMILY_UNITBEDS_HINT" />
+                                <!-- [Fields 1657] Mytextvalue Field. Type: Text. (joomla)-->
+                                <field type="text"
+                                       name="mytextvalue"
+                                       label="COM_REALESTATENOW_MULTIFAMILY_MYTEXTVALUE_LABEL"
+                                       size="10"
+                                       maxlength="50"
+                                       default=""
+                                       description="COM_REALESTATENOW_MULTIFAMILY_MYTEXTVALUE_DESCRIPTION"
+                                       class="text_area"
+                                       readonly="false"
+                                       disabled="false"
+                                       required="false"
+                                       filter="STRING"
+                                       message="COM_REALESTATENOW_MULTIFAMILY_MYTEXTVALUE_MESSAGE"
+                                       hint="COM_REALESTATENOW_MULTIFAMILY_MYTEXTVALUE_HINT"
+                                       autocomplete="on" />
+                        </form>
+                </field>
+                <!-- [Fields 1657] Tenantpdutilities Field. Type: Text. (joomla)-->
+                <field type="text"
+                       name="tenantpdutilities"
+                       label="COM_REALESTATENOW_MULTIFAMILY_TENANTPDUTILITIES_LABEL"
+                       size="10"
+                       maxlength="50"
+                       default=""
+                       class="text_area"
+                       readonly="false"
+                       disabled="false"
+                       required="false"
+                       filter="STRING"
+                       message="COM_REALESTATENOW_MULTIFAMILY_TENANTPDUTILITIES_MESSAGE"
+                       hint="COM_REALESTATENOW_MULTIFAMILY_TENANTPDUTILITIES_HINT" />
+                <!-- [Fields 1657] Tenancytype Field. Type: Text. (joomla)-->
+                <field type="text"
+                       name="tenancytype"
+                       label="COM_REALESTATENOW_MULTIFAMILY_TENANCYTYPE_LABEL"
+                       size="10"
+                       maxlength="50"
+                       default=""
+                       class="text_area"
+                       readonly="false"
+                       disabled="false"
+                       required="false"
+                       filter="STRING"
+                       message="COM_REALESTATENOW_MULTIFAMILY_TENANCYTYPE_MESSAGE"
+                       hint="COM_REALESTATENOW_MULTIFAMILY_TENANCYTYPE_HINT" />
+                <!-- [Fields 1657] Numunits Field. Type: Text. (joomla)-->
+                <field type="text"
+                       name="numunits"
+                       label="COM_REALESTATENOW_MULTIFAMILY_NUMUNITS_LABEL"
+                       size="10"
+                       maxlength="50"
+                       default=""
+                       class="text_area"
+                       readonly="false"
+                       disabled="false"
+                       required="false"
+                       filter="STRING"
+                       message="COM_REALESTATENOW_MULTIFAMILY_NUMUNITS_MESSAGE"
+                       hint="COM_REALESTATENOW_MULTIFAMILY_NUMUNITS_HINT" />
+                <!-- [Fields 1657] Totalrents Field. Type: Text. (joomla)-->
+                <field type="text"
+                       name="totalrents"
+                       label="COM_REALESTATENOW_MULTIFAMILY_TOTALRENTS_LABEL"
+                       size="10"
+                       maxlength="50"
+                       default=""
+                       class="text_area"
+                       readonly="false"
+                       disabled="false"
+                       required="false"
+                       filter="STRING"
+                       message="COM_REALESTATENOW_MULTIFAMILY_TOTALRENTS_MESSAGE"
+                       hint="COM_REALESTATENOW_MULTIFAMILY_TOTALRENTS_HINT" />
+                <!-- [Fields 1657] Bldgsqft Field. Type: Text. (joomla)-->
+                <field type="text"
+                       name="bldgsqft"
+                       label="COM_REALESTATENOW_MULTIFAMILY_BLDGSQFT_LABEL"
+                       size="10"
+                       maxlength="50"
+                       default="0"
+                       class="text_area"
+                       readonly="false"
+                       disabled="false"
+                       required="false"
+                       filter="STRING"
+                       message="COM_REALESTATENOW_MULTIFAMILY_BLDGSQFT_MESSAGE"
+                       hint="COM_REALESTATENOW_MULTIFAMILY_BLDGSQFT_HINT" />
+                <!-- [Fields 946] Metadata Fields-->
+                <fields name="metadata"
+                        label="JGLOBAL_FIELDSET_METADATA_OPTIONS">
+                        <fieldset name="vdmmetadata"
+                                  label="JGLOBAL_FIELDSET_METADATA_OPTIONS">
+                                <!-- [Fields 954] Robots Field. Type: List (joomla)-->
+                                <field name="robots"
+                                       type="list"
+                                       label="JFIELD_METADATA_ROBOTS_LABEL"
+                                       description="JFIELD_METADATA_ROBOTS_DESC">
+                                        <option value="">JGLOBAL_USE_GLOBAL</option>
+                                        <option value="index, follow">JGLOBAL_INDEX_FOLLOW</option>
+                                        <option value="noindex, follow">JGLOBAL_NOINDEX_FOLLOW</option>
+                                        <option value="index, nofollow">JGLOBAL_INDEX_NOFOLLOW</option>
+                                        <option value="noindex, nofollow">JGLOBAL_NOINDEX_NOFOLLOW</option>
+                                </field>
+                                <!-- [Fields 979] Author Field. Type: Text (joomla)-->
+                                <field name="author"
+                                       type="text"
+                                       label="JAUTHOR"
+                                       description="JFIELD_METADATA_AUTHOR_DESC"
+                                       size="20" />
+                                <!-- [Fields 992] Rights Field. Type: Textarea (joomla)-->
+                                <field name="rights"
+                                       type="textarea"
+                                       label="JFIELD_META_RIGHTS_LABEL"
+                                       description="JFIELD_META_RIGHTS_DESC"
+                                       required="false"
+                                       filter="string"
+                                       cols="30"
+                                       rows="2" />
+                        </fieldset>
+                </fields>
+        </fieldset>
+	
+	<!-- [Interpretation 11689] Access Control Fields. -->
+	<fieldset name="accesscontrol">
+		<!-- [Interpretation 11691] Asset Id Field. Type: Hidden (joomla) -->
+		<field
+			name="asset_id"
+			type="hidden"
+			filter="unset"
+		/>
+		<!-- [Interpretation 11697] Rules Field. Type: Rules (joomla) -->
+		<field
+			name="rules"
+			type="rules"
+			label="Permissions in relation to this multifamily"
+			translate_label="false"
+			filter="rules"
+			validate="rules"
+			class="inputbox"
+			component="com_realestatenow"
+			section="multifamily"
+		/>
+	</fieldset>
+</form>

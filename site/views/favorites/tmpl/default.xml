@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<metadata>
+	<layout title="COM_REALESTATENOW_MENU_FAVORITES_TITLE" option="COM_REALESTATENOW_MENU_FAVORITES_OPTION">
+		<message>
+			<![CDATA[COM_REALESTATENOW_MENU_FAVORITES_DESC]]>
+		</message>
+	</layout>
+</metadata>

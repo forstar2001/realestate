@@ -1,0 +1,432 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form
+	addrulepath="/administrator/components/com_realestatenow/models/rules"
+	addfieldpath="/administrator/components/com_realestatenow/models/fields"
+>
+	<fieldset name="details">
+                <!-- [Fields 736] Default Fields.-->
+                <!-- [Fields 737] Id Field. Type: Text (joomla)-->
+                <field name="id"
+                       type="text"
+                       class="readonly"
+                       readonly="true"
+                       label="JGLOBAL_FIELD_ID_LABEL"
+                       description="JGLOBAL_FIELD_ID_DESC"
+                       size="10"
+                       default="0" />
+                <!-- [Fields 769] Date Created Field. Type: Calendar (joomla)-->
+                <field name="created"
+                       type="calendar"
+                       label="COM_REALESTATENOW_AGENCY_CREATED_DATE_LABEL"
+                       description="COM_REALESTATENOW_AGENCY_CREATED_DATE_DESC"
+                       size="22"
+                       format="%Y-%m-%d %H:%M:%S"
+                       filter="user_utc" />
+                <!-- [Fields 785] User Created Field. Type: User (joomla)-->
+                <field name="created_by"
+                       type="user"
+                       label="COM_REALESTATENOW_AGENCY_CREATED_BY_LABEL"
+                       description="COM_REALESTATENOW_AGENCY_CREATED_BY_DESC" />
+                <!-- [Fields 800] Published Field. Type: List (joomla)-->
+                <field name="published"
+                       type="list"
+                       label="JSTATUS">
+                        <option value="1">JPUBLISHED</option>
+                        <option value="0">JUNPUBLISHED</option>
+                        <option value="2">JARCHIVED</option>
+                        <option value="-2">JTRASHED</option>
+                </field>
+                <!-- [Fields 826] Date Modified Field. Type: Calendar (joomla)-->
+                <field name="modified"
+                       type="calendar"
+                       class="readonly"
+                       label="COM_REALESTATENOW_AGENCY_MODIFIED_DATE_LABEL"
+                       description="COM_REALESTATENOW_AGENCY_MODIFIED_DATE_DESC"
+                       size="22"
+                       readonly="true"
+                       format="%Y-%m-%d %H:%M:%S"
+                       filter="user_utc" />
+                <!-- [Fields 844] User Modified Field. Type: User (joomla)-->
+                <field name="modified_by"
+                       type="user"
+                       label="COM_REALESTATENOW_AGENCY_MODIFIED_BY_LABEL"
+                       description="COM_REALESTATENOW_AGENCY_MODIFIED_BY_DESC"
+                       class="readonly"
+                       readonly="true"
+                       filter="unset" />
+                <!-- [Fields 862] Access Field. Type: Accesslevel (joomla)-->
+                <field name="access"
+                       type="accesslevel"
+                       label="JFIELD_ACCESS_LABEL"
+                       description="JFIELD_ACCESS_DESC"
+                       default="1"
+                       required="false" />
+                <!-- [Fields 882] Ordering Field. Type: Numbers (joomla)-->
+                <field name="ordering"
+                       type="number"
+                       class="inputbox validate-ordering"
+                       label="COM_REALESTATENOW_AGENCY_ORDERING_LABEL"
+                       description=""
+                       default="0"
+                       size="6"
+                       required="false" />
+                <!-- [Fields 901] Version Field. Type: Text (joomla)-->
+                <field name="version"
+                       type="text"
+                       class="readonly"
+                       label="COM_REALESTATENOW_AGENCY_VERSION_LABEL"
+                       description="COM_REALESTATENOW_AGENCY_VERSION_DESC"
+                       size="6"
+                       readonly="true"
+                       filter="unset" />
+                <!-- [Fields 919] Metakey Field. Type: Textarea (joomla)-->
+                <field name="metakey"
+                       type="textarea"
+                       label="JFIELD_META_KEYWORDS_LABEL"
+                       description="JFIELD_META_KEYWORDS_DESC"
+                       rows="3"
+                       cols="30" />
+                <!-- [Fields 928] Metadesc Field. Type: Textarea (joomla)-->
+                <field name="metadesc"
+                       type="textarea"
+                       label="JFIELD_META_DESCRIPTION_LABEL"
+                       description="JFIELD_META_DESCRIPTION_DESC"
+                       rows="3"
+                       cols="30" />
+                <!-- [Fields 937] Dynamic Fields.-->
+                <!-- [Fields 1657] Name Field. Type: Text. (joomla)-->
+                <field type="text"
+                       name="name"
+                       label="COM_REALESTATENOW_AGENCY_NAME_LABEL"
+                       size="10"
+                       maxlength="50"
+                       default=""
+                       description="JFIELD_TITLE_DESC"
+                       class="text_area"
+                       readonly="false"
+                       disabled="false"
+                       required="true"
+                       filter="STRING"
+                       message="COM_REALESTATENOW_AGENCY_NAME_MESSAGE"
+                       hint="COM_REALESTATENOW_AGENCY_NAME_HINT" />
+                <!-- [Fields 1657] Street Field. Type: Text. (joomla)-->
+                <field type="text"
+                       name="street"
+                       label="COM_REALESTATENOW_AGENCY_STREET_LABEL"
+                       size="10"
+                       maxlength="50"
+                       default=""
+                       class="text_area"
+                       readonly="false"
+                       disabled="false"
+                       required="false"
+                       filter="STRING"
+                       message="COM_REALESTATENOW_AGENCY_STREET_MESSAGE"
+                       hint="COM_REALESTATENOW_AGENCY_STREET_HINT" />
+                <!-- [Fields 1897] Cityid Field. Type: Cities. (custom)-->
+                <field type="cities"
+                       name="cityid"
+                       label="COM_REALESTATENOW_AGENCY_CITYID_LABEL"
+                       description="COM_REALESTATENOW_AGENCY_CITYID_DESCRIPTION"
+                       class="list_class"
+                       multiple="false"
+                       default="0"
+                       required="true"
+                       button="true" />
+                <!-- [Fields 1897] Stateid Field. Type: States. (custom)-->
+                <field type="states"
+                       name="stateid"
+                       label="COM_REALESTATENOW_AGENCY_STATEID_LABEL"
+                       description="COM_REALESTATENOW_AGENCY_STATEID_DESCRIPTION"
+                       class="list_class"
+                       multiple="false"
+                       default="0"
+                       required="true"
+                       button="true" />
+                <!-- [Fields 1657] Postcode Field. Type: Text. (joomla)-->
+                <field type="text"
+                       name="postcode"
+                       label="COM_REALESTATENOW_AGENCY_POSTCODE_LABEL"
+                       size="40"
+                       maxlength="150"
+                       description="COM_REALESTATENOW_AGENCY_POSTCODE_DESCRIPTION"
+                       class="text_area"
+                       readonly="false"
+                       disabled="false"
+                       required="false"
+                       filter="STRING"
+                       message="COM_REALESTATENOW_AGENCY_POSTCODE_MESSAGE"
+                       hint="COM_REALESTATENOW_AGENCY_POSTCODE_HINT" />
+                <!-- [Fields 1657] Alias Field. Type: Text. (joomla)-->
+                <field type="text"
+                       name="alias"
+                       label="COM_REALESTATENOW_AGENCY_ALIAS_LABEL"
+                       description="JFIELD_ALIAS_DESC"
+                       filter="STRING"
+                       hint="COM_REALESTATENOW_AGENCY_ALIAS_HINT" />
+                <!-- [Fields 1657] Description Field. Type: Editor. (joomla)-->
+                <field type="editor"
+                       name="description"
+                       label="COM_REALESTATENOW_AGENCY_DESCRIPTION_LABEL"
+                       width="100%"
+                       height="500"
+                       cols="13"
+                       rows="50"
+                       buttons="false"
+                       filter="safehtml" />
+                <!-- [Fields 1657] Streettwo Field. Type: Text. (joomla)-->
+                <field type="text"
+                       name="streettwo"
+                       label="COM_REALESTATENOW_AGENCY_STREETTWO_LABEL"
+                       size="10"
+                       maxlength="50"
+                       default=""
+                       class="text_area"
+                       readonly="false"
+                       disabled="false"
+                       required="false"
+                       filter="STRING"
+                       message="COM_REALESTATENOW_AGENCY_STREETTWO_MESSAGE"
+                       hint="COM_REALESTATENOW_AGENCY_STREETTWO_HINT" />
+                <!-- [Fields 1671] Mapnote Field. Type: Note. A None Database Field. (joomla)-->
+                <field type="note"
+                       name="mapnote"
+                       label="COM_REALESTATENOW_AGENCY_MAPNOTE_LABEL"
+                       description="COM_REALESTATENOW_AGENCY_MAPNOTE_DESCRIPTION"
+                       heading="h4"
+                       class="alert mapnote"
+                       close="true" />
+                <!-- [Fields 1657] Latitude Field. Type: Text. (joomla)-->
+                <field type="text"
+                       name="latitude"
+                       label="COM_REALESTATENOW_AGENCY_LATITUDE_LABEL"
+                       size="40"
+                       maxlength="150"
+                       description="COM_REALESTATENOW_AGENCY_LATITUDE_DESCRIPTION"
+                       class="text_area"
+                       readonly="false"
+                       disabled="false"
+                       required="false"
+                       filter="STRING"
+                       message="COM_REALESTATENOW_AGENCY_LATITUDE_MESSAGE"
+                       hint="COM_REALESTATENOW_AGENCY_LATITUDE_HINT" />
+                <!-- [Fields 1657] Rets_source Field. Type: Text. (joomla)-->
+                <field type="text"
+                       name="rets_source"
+                       label="COM_REALESTATENOW_AGENCY_RETS_SOURCE_LABEL"
+                       size="10"
+                       maxlength="50"
+                       default=""
+                       class="text_area"
+                       readonly="true"
+                       disabled="false"
+                       required="false"
+                       filter="STRING"
+                       message="COM_REALESTATENOW_AGENCY_RETS_SOURCE_MESSAGE"
+                       hint="COM_REALESTATENOW_AGENCY_RETS_SOURCE_HINT" />
+                <!-- [Fields 1657] Website Field. Type: Url. (joomla)-->
+                <field type="url"
+                       name="website"
+                       label="COM_REALESTATENOW_AGENCY_WEBSITE_LABEL"
+                       size="60"
+                       maxlength="150"
+                       description="COM_REALESTATENOW_AGENCY_WEBSITE_DESCRIPTION"
+                       class="text_area"
+                       filter="url"
+                       validated="url"
+                       scheme="http,https"
+                       message="COM_REALESTATENOW_AGENCY_WEBSITE_MESSAGE"
+                       hint="COM_REALESTATENOW_AGENCY_WEBSITE_HINT" />
+                <!-- [Fields 1657] Email Field. Type: Text. (joomla)-->
+                <field type="text"
+                       name="email"
+                       label="COM_REALESTATENOW_AGENCY_EMAIL_LABEL"
+                       size="10"
+                       maxlength="50"
+                       description="COM_REALESTATENOW_AGENCY_EMAIL_DESCRIPTION"
+                       class="text_area"
+                       required="false"
+                       filter="STRING"
+                       validate="email"
+                       message="COM_REALESTATENOW_AGENCY_EMAIL_MESSAGE"
+                       hint="COM_REALESTATENOW_AGENCY_EMAIL_HINT" />
+                <!-- [Fields 1897] Countryid Field. Type: Country. (custom)-->
+                <field type="country"
+                       name="countryid"
+                       label="COM_REALESTATENOW_AGENCY_COUNTRYID_LABEL"
+                       description="COM_REALESTATENOW_AGENCY_COUNTRYID_DESCRIPTION"
+                       class="list_class"
+                       multiple="false"
+                       default="0"
+                       button="true" />
+                <!-- [Fields 1577] Featured Field. Type: Radio. (joomla)-->
+                <field type="radio"
+                       name="featured"
+                       label="COM_REALESTATENOW_AGENCY_FEATURED_LABEL"
+                       description="COM_REALESTATENOW_AGENCY_FEATURED_DESCRIPTION"
+                       class="btn-group btn-group-yesno"
+                       default="0">
+                        <!-- [Fields 1587] Option Set.-->
+                        <option value="1">COM_REALESTATENOW_AGENCY_YES</option>
+                        <option value="0">COM_REALESTATENOW_AGENCY_NO</option>
+                </field>
+                <!-- [Fields 1577] Default_agency_yn Field. Type: Radio. (joomla)-->
+                <field type="radio"
+                       name="default_agency_yn"
+                       label="COM_REALESTATENOW_AGENCY_DEFAULT_AGENCY_YN_LABEL"
+                       description="COM_REALESTATENOW_AGENCY_DEFAULT_AGENCY_YN_DESCRIPTION"
+                       class="btn-group btn-group-yesno"
+                       default="0">
+                        <!-- [Fields 1587] Option Set.-->
+                        <option value="1">COM_REALESTATENOW_AGENCY_YES</option>
+                        <option value="0">COM_REALESTATENOW_AGENCY_NO</option>
+                </field>
+                <!-- [Fields 1657] License Field. Type: Text. (joomla)-->
+                <field type="text"
+                       name="license"
+                       label="COM_REALESTATENOW_AGENCY_LICENSE_LABEL"
+                       size="10"
+                       maxlength="50"
+                       default=""
+                       class="text_area"
+                       readonly="false"
+                       disabled="false"
+                       required="false"
+                       filter="STRING"
+                       message="COM_REALESTATENOW_AGENCY_LICENSE_MESSAGE"
+                       hint="COM_REALESTATENOW_AGENCY_LICENSE_HINT" />
+                <!-- [Fields 1577] Owncoords Field. Type: Radio. (joomla)-->
+                <field type="radio"
+                       name="owncoords"
+                       label="COM_REALESTATENOW_AGENCY_OWNCOORDS_LABEL"
+                       class="btn-group btn-group-yesno"
+                       default="0">
+                        <!-- [Fields 1587] Option Set.-->
+                        <option value="1">COM_REALESTATENOW_AGENCY_YES</option>
+                        <option value="0">COM_REALESTATENOW_AGENCY_NO</option>
+                </field>
+                <!-- [Fields 1657] Phone Field. Type: Text. (joomla)-->
+                <field type="text"
+                       name="phone"
+                       label="COM_REALESTATENOW_AGENCY_PHONE_LABEL"
+                       size="10"
+                       maxlength="50"
+                       default=""
+                       description="COM_REALESTATENOW_AGENCY_PHONE_DESCRIPTION"
+                       class="text_area"
+                       readonly="false"
+                       disabled="false"
+                       required="false"
+                       filter="tel"
+                       validated="tel"
+                       message="COM_REALESTATENOW_AGENCY_PHONE_MESSAGE"
+                       hint="COM_REALESTATENOW_AGENCY_PHONE_HINT" />
+                <!-- [Fields 1657] Longitude Field. Type: Text. (joomla)-->
+                <field type="text"
+                       name="longitude"
+                       label="COM_REALESTATENOW_AGENCY_LONGITUDE_LABEL"
+                       size="40"
+                       maxlength="150"
+                       description="COM_REALESTATENOW_AGENCY_LONGITUDE_DESCRIPTION"
+                       class="text_area"
+                       readonly="false"
+                       disabled="false"
+                       required="false"
+                       filter="STRING"
+                       message="COM_REALESTATENOW_AGENCY_LONGITUDE_MESSAGE"
+                       hint="COM_REALESTATENOW_AGENCY_LONGITUDE_HINT" />
+                <!-- [Fields 1657] Fax Field. Type: Text. (joomla)-->
+                <field type="text"
+                       name="fax"
+                       label="COM_REALESTATENOW_AGENCY_FAX_LABEL"
+                       size="10"
+                       maxlength="50"
+                       default=""
+                       description="COM_REALESTATENOW_AGENCY_FAX_DESCRIPTION"
+                       class="text_area"
+                       readonly="false"
+                       disabled="false"
+                       required="false"
+                       filter="tel"
+                       validated="tel"
+                       message="COM_REALESTATENOW_AGENCY_FAX_MESSAGE"
+                       hint="COM_REALESTATENOW_AGENCY_FAX_HINT" />
+                <!-- [Fields 1657] Settings_id Field. Type: Text. (joomla)-->
+                <field type="text"
+                       name="settings_id"
+                       label="COM_REALESTATENOW_AGENCY_SETTINGS_ID_LABEL"
+                       size="10"
+                       maxlength="50"
+                       default=""
+                       description="COM_REALESTATENOW_AGENCY_SETTINGS_ID_DESCRIPTION"
+                       class="text_area"
+                       readonly="true"
+                       disabled="false"
+                       required="false"
+                       filter="STRING"
+                       message="COM_REALESTATENOW_AGENCY_SETTINGS_ID_MESSAGE"
+                       hint="COM_REALESTATENOW_AGENCY_SETTINGS_ID_HINT"
+                       autocomplete="on" />
+                <!-- [Fields 1657] Image Field. Type: Media. (joomla)-->
+                <field type="media"
+                       name="image"
+                       label="COM_REALESTATENOW_AGENCY_IMAGE_LABEL"
+                       directory="realestatenow/agencies/"
+                       preview="true" />
+                <!-- [Fields 946] Metadata Fields-->
+                <fields name="metadata"
+                        label="JGLOBAL_FIELDSET_METADATA_OPTIONS">
+                        <fieldset name="vdmmetadata"
+                                  label="JGLOBAL_FIELDSET_METADATA_OPTIONS">
+                                <!-- [Fields 954] Robots Field. Type: List (joomla)-->
+                                <field name="robots"
+                                       type="list"
+                                       label="JFIELD_METADATA_ROBOTS_LABEL"
+                                       description="JFIELD_METADATA_ROBOTS_DESC">
+                                        <option value="">JGLOBAL_USE_GLOBAL</option>
+                                        <option value="index, follow">JGLOBAL_INDEX_FOLLOW</option>
+                                        <option value="noindex, follow">JGLOBAL_NOINDEX_FOLLOW</option>
+                                        <option value="index, nofollow">JGLOBAL_INDEX_NOFOLLOW</option>
+                                        <option value="noindex, nofollow">JGLOBAL_NOINDEX_NOFOLLOW</option>
+                                </field>
+                                <!-- [Fields 979] Author Field. Type: Text (joomla)-->
+                                <field name="author"
+                                       type="text"
+                                       label="JAUTHOR"
+                                       description="JFIELD_METADATA_AUTHOR_DESC"
+                                       size="20" />
+                                <!-- [Fields 992] Rights Field. Type: Textarea (joomla)-->
+                                <field name="rights"
+                                       type="textarea"
+                                       label="JFIELD_META_RIGHTS_LABEL"
+                                       description="JFIELD_META_RIGHTS_DESC"
+                                       required="false"
+                                       filter="string"
+                                       cols="30"
+                                       rows="2" />
+                        </fieldset>
+                </fields>
+        </fieldset>
+	
+	<!-- [Interpretation 11689] Access Control Fields. -->
+	<fieldset name="accesscontrol">
+		<!-- [Interpretation 11691] Asset Id Field. Type: Hidden (joomla) -->
+		<field
+			name="asset_id"
+			type="hidden"
+			filter="unset"
+		/>
+		<!-- [Interpretation 11697] Rules Field. Type: Rules (joomla) -->
+		<field
+			name="rules"
+			type="rules"
+			label="Permissions in relation to this agency"
+			translate_label="false"
+			filter="rules"
+			validate="rules"
+			class="inputbox"
+			component="com_realestatenow"
+			section="agency"
+		/>
+	</fieldset>
+</form>
